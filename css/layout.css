@@ -1,0 +1,475 @@
+@charset "utf-8";
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  color: #3f3d56;
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* 헤더 컨텐츠 영역 공통설정 */
+.con {
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+header > .con {
+  height: 100px;
+  display: flex;
+  gap: 100px;
+}
+
+/* 헤더의 세로 중앙정렬할때 align-items쓰면 2차메뉴때 밀려서 쓰면 안됨
+개발자도구로 로고 높이 확인하고 계산해서 마진으로 중앙 정렬 */
+h1 {
+  width: fit-content;
+  height: fit-content;
+  margin: 36px 0;
+}
+#gnb {
+  margin-left: auto;
+  width: fit-content;
+  line-height: 100px;
+}
+#gnb > ul {
+  width: fit-content;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+}
+/* 메뉴에 호버하면 font-weight 때문에 텍스트들이 움직여서 폭을 고정시킨거 */
+#gnb > ul > li {
+  width: 100px;
+}
+#gnb > ul > li > a {
+  transition: 0.4s;
+  font-size: 18px;
+  display: block;
+}
+#gnb > ul > li:hover > a {
+  color: #f50057;
+  font-weight: 600;
+}
+/* 2차메뉴 */
+.submenu {
+  line-height: 60px;
+  font-size: 18px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  /* transition-property */
+  transition: height 0.4s;
+}
+.submenu > li > a {
+  transition: 0.4s;
+  display: block;
+}
+.submenu > li:hover a {
+  color: #f50057;
+}
+
+/* 1차메뉴에 마우스를 올리면 2차메뉴 전체 보여주기 */
+/* 2차메뉴의 높이=60*3개=180px */
+#gnb > ul:hover .submenu {
+  height: 180px;
+}
+
+/* 로그인, 전체메뉴 */
+.icons {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.icons a {
+  font-size: 28px;
+  /* ▼ 아이콘 사방으로 영역을 늘려서 클릭 범위를 늘려줌 */
+  display: block;
+  padding: 4px;
+  transition: 0.4s;
+}
+
+.icons a:hover {
+  color: #f50057;
+}
+
+/* 메인이미지 */
+main {
+  width: 100%;
+  height: auto;
+}
+section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.main_visaul {
+  height: 850px;
+  background-color: #19163c;
+  color: #fff;
+  position: relative;
+}
+/* 포지션 쓰면 margin 적용되지X */
+.main_visual_text {
+  width: 600px;
+  height: auto;
+  /* 뒤에있는 요소들이랑 겹쳐져야해서 position: absolute; */
+  /* 0점을 메인비주얼의 중앙으로 이동 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  /* 위에 설정해둔 0점에서 텍스트 컨텐츠 부분 자체를 중앙으로 이동(끌어당김) */
+  transform: translate(-300px, -112px);
+  /* 아래에 뒤 이미지를 이동시킬거라 이미지가 앞으로 튀어나올거여서 z-index로 앞으로 끌어당겨둠 */
+  z-index: 100;
+}
+.main_visual_text h2 {
+  font-size: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f50057;
+  margin-bottom: 30px;
+}
+.main_visual_text p {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+/* 이미지 위치+애니메이션 */
+.man {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 100px;
+  animation: floating01 3s linear 0s infinite;
+}
+@keyframes floating01 {
+  0% {
+    top: 100px;
+  }
+  50% {
+    top: 120px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+.woman {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  animation: floating02 2s linear 0s infinite;
+}
+@keyframes floating02 {
+  0% {
+    right: 0px;
+    top: 80px;
+  }
+  50% {
+    right: -20px;
+    top: 100px;
+  }
+  100% {
+    right: 0px;
+    top: 80px;
+  }
+}
+/* 메인이미지 끝 */
+
+/* 메인 2번째 섹션 (what we do) */
+.sec2 {
+  height: 800px;
+  /* 앞에 쓰여진 url이 더 앞에(맨 위로) 나옴 */
+  background-image: url(../img/bg_02.png), url(../img/bg_01.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.sec2 > .con {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2 .left_text {
+  width: fit-content;
+  height: auto;
+  text-align: center;
+}
+.left_text h3 {
+  font-weight: 900;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 60px;
+  text-align: center;
+}
+.left_text h3::after {
+  content: "line";
+  font-size: 0;
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #f50057;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.left_text p {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left_text p + button {
+  width: 400px;
+  height: 80px;
+  border: none;
+  font-size: 20px;
+  border-radius: 40px;
+  background-color: #19163c;
+  color: #fff;
+  /* margin: 0 auto; */
+  transition: 0.3s;
+}
+.left_text p + button:hover {
+  background-color: #f50057;
+  cursor: pointer;
+}
+.right_image {
+  width: 750px;
+  height: auto;
+}
+
+/* 메인 3번째 섹션 */
+.sec3 {
+  padding: 250px 0;
+  text-align: center;
+}
+.sec3 > .con > h2 {
+  font-size: 47px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.sec3 > .con > h2 + p {
+  font-size: 24px;
+}
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.cards > div {
+  width: 370px;
+  overflow: hidden;
+}
+.img_area {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.img_area img {
+  position: absolute;
+}
+.img_area .human {
+  z-index: 20;
+  top: 0;
+  left: 50%;
+  margin-left: -90px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.img_area .floor {
+  bottom: 0;
+}
+.cards > div:hover .human {
+  opacity: 1;
+  top: 30px;
+}
+.text_area {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.text_area h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.text_area p {
+  line-height: 26px;
+}
+
+/* 메인 4번째 섹션 */
+.sec4 {
+  background-color: #f7f7f7;
+  padding: 250px 0;
+  text-align: center;
+}
+.sec4 > .con > h2 {
+  font-size: 47px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.sec4 > .con > h2 + p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+.app_btn {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.app_btn button {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19163c;
+  color: #fff;
+  gap: 8px;
+  border-radius: 100px;
+  padding: 0 46px;
+  box-sizing: border-box;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ffffff00;
+}
+.app_btn .app_store:hover {
+  background-color: #f50057;
+  border: 1px solid #f50057;
+  color: #fff;
+}
+.app_btn .play_store:hover {
+  background-color: #f50057;
+  border: 1px solid #f50057;
+  color: #fff;
+}
+
+/* 메인 5번째 섹션 */
+.sec5 {
+  padding: 250px 0;
+}
+.sec5 .con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form_left h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.form_left h2 + p {
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 100;
+}
+.con form {
+  width: 1000px;
+  height: fit-content;
+  padding: 50px 80px;
+  box-sizing: border-box;
+  border-top: 1px solid #19163c;
+  border-bottom: 1px solid #19163c;
+}
+.con form > div {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.con form > div > input {
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  font-size: 22px;
+  color: #3f3d56;
+  border: none;
+  font-weight: 200px;
+  outline: none;
+  padding: 0 8px;
+}
+.con form > div > input:focus {
+  border-bottom: 1px solid #3f3d56;
+}
+
+/* 질문박스 */
+.con form > .questions {
+  position: relative;
+  height: 300px;
+}
+.con form > div > textarea {
+  width: 80%;
+  height: 300px;
+  outline: none;
+  border: none;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 300;
+  color: #3f3d56;
+  font-family: "Roboto", sans-serif;
+}
+.con form > div > textarea:focus {
+  border-bottom: 1px solid #3f3d56;
+}
+.questions button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #19163c;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.questions button:hover {
+  background-color: #f50057;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f7f7f7;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  color: #bebebe;
+}
