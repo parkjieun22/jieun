@@ -19,11 +19,6 @@
     display: none;
   }
 
-  /* 로그인, 전체메뉴 */
-  .icons {
-    gap: 10px;
-  }
-
   /* 메인이미지 텍스트 부분 */
   .main_visual_text {
     width: 80%;
@@ -43,9 +38,6 @@
   .main_visual_text p {
     font-size: 4.7vw;
     line-height: 1.7;
-  }
-  .woman {
-    display: none;
   }
 
   /* 메인 2번째 섹션 (what we do) */
@@ -96,47 +88,6 @@
     width: 100%;
     justify-content: center;
   }
-
-  /* 메인 5번째 섹션 */
-  .sec5 .con {
-    display: block;
-  }
-  .form_left {
-    width: 100%;
-    margin-bottom: 80px;
-  }
-  .form_left h2 {
-    font-size: clamp(38px, 10vw, 42px);
-    font-weight: 700;
-  }
-  .form_left h2 + p {
-    font-size: clamp(18px, 10vw, 20px);
-  }
-  .form_left h2 + p br {
-    display: none;
-  }
-
-  /* form */
-  .con form {
-    width: 100%;
-    padding: 50px 0;
-  }
-  .con form > div {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 30px;
-  }
-  .con form > div > input {
-    width: 100%;
-  }
-  .con form > div > textarea {
-    width: 100%;
-  }
-  /* 임시로 안보이게 */
-  /* footer {
-    display: none;
-  } */
 }
 
 /* 작은 테블릿 ver */
@@ -203,17 +154,6 @@
     color: #f50057;
   }
 
-  /* 이미지 위치+애니메이션 */
-  .man {
-    transform: scale(0.6);
-    transform-origin: left;
-  }
-  .woman {
-    display: block;
-    transform: scale(0.7);
-    transform-origin: right;
-  }
-
   /* 메인 2번째 섹션 (what we do) */
   .sec2 .left_text {
     width: fit-content;
@@ -226,39 +166,4 @@
   .sec2 > .con {
     justify-content: space-around;
   }
-  /* 메인 5번째 섹션 */
-  /* .sec5 .con {
-    display: flex;
-  }
-  .form_left h2 + p br {
-    display: block;
-  }
-  .form_left {
-    width: fit-content;
-    margin-bottom: 0;
-    text-align: left;
-  }
-  .form_left h2 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .form_left h2 + p {
-    font-size: 26px;
-    line-height: 1.4;
-    font-weight: 100;
-  }
-  .con form {
-    width: 60%;
-    padding: 50px 40px;
-  }
-  .con form > div {
-    flex-direction: row;
-  }
-  .con form > div > input {
-    width: 80%;
-  }
-  .con form > div > textarea {
-    width: 80%;
-  } */
 }

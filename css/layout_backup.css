@@ -1,12 +1,9 @@
 @charset "utf-8";
 @import url("./reset.css");
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
 
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Brygada 1918", serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1;
@@ -43,13 +40,16 @@ h1 {
   width: fit-content;
   height: fit-content;
   margin: 30px 0;
-  color: #fff;
+}
+
+/* 로고 */
+.con h1 img {
+  height: 40px;
 }
 
 #gnb {
   width: fit-content;
   line-height: 100px;
-  font-weight: 600;
 }
 #gnb > ul {
   width: fit-content;
@@ -83,104 +83,64 @@ section {
 }
 .main_visaul {
   height: 850px;
-  background-color: #000;
-  color: #ffffff;
+  background-color: #eaeaea;
+  color: #000;
   position: relative;
-  background: linear-gradient(-45deg, #000000, #05305e, #000000);
-  background-size: 400% 400%;
-  animation: colorChange 6s ease infinite;
-}
-@keyframes colorChange {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 /* 포지션 쓰면 margin 적용되지X */
 .main_visual_text {
-  width: 1600px;
-  height: 600px;
+  width: 600px;
+  height: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 9%;
   z-index: 100;
-  /* padding: 90px 135px; */
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  -moz-backdrop-filter: blur(30px);
-  -o-backdrop-filter: blur(30px);
 }
 .main_visual_text h2 {
   font-size: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #fff;
   font-weight: 600;
-  color: #fff;
+  color: #00754b;
   margin-bottom: 30px;
 }
 .main_visual_text p {
   font-size: 16px;
   line-height: 24px;
 }
-/* 메인이미지 끝 */
 
-/* 로고 */
-.logo_wrap {
+/* 메인 슬라이드 */
+
+/* 메인 슬라이드 끝 */
+.main_img_wrap {
+  width: 630px;
+  height: 900px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 80px;
+}
+.left_img,
+.right_img {
+  width: 300px;
+  height: 900px;
+}
+.main_img_wrap .main_slide img {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  object-fit: cover;
+}
+.main_img_wrap .main_slide {
+  width: 300px;
+  height: 300px;
   overflow: hidden;
+  border: 4px solid #000;
+  border-bottom: 4px;
+  box-sizing: border-box;
 }
-.logo_wrap div img {
-  width: 82%;
-}
-.logo1 {
-  position: absolute;
-  top: 60vh;
-  right: 1vw;
-  transform: rotate(13deg);
-}
-.logo2 {
-  position: absolute;
-  top: 40vh;
-  right: 88vw;
-  transform: rotate(343deg);
-}
-.logo3 {
-  position: absolute;
-  top: 66vh;
-  right: 13vw;
-  transform: rotate(336deg);
-}
-.logo4 {
-  position: absolute;
-  top: 37vh;
-  right: -1vw;
-  transform: rotate(344deg);
-}
-.logo5 {
-  position: absolute;
-  top: 65vh;
-  right: 74vw;
-  transform: rotate(19deg);
-}
-.logo6 {
-  position: absolute;
-  top: 61vh;
-  right: 84vw;
-  transform: rotate(344deg);
-}
+
+/* 메인이미지 끝 */
 
 /* 메인 2번째 섹션 (what we do) */
 .sec2 {
