@@ -1,0 +1,19 @@
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+
+/* 중간사이즈 노트북, 큰 사이즈 테블릿 */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+}
+
+/* 테블릿 중간~소 사이즈 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 모바일 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* 작은 모바일 */
+@media screen and (max-width: 480px) {
+}

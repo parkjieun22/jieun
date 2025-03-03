@@ -1,16 +1,17 @@
 @charset "utf-8";
 @import url("./reset.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/* 공통설정 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  font-family: "Pretendard Variable", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
-  color: #fff;
-  background-color: #000;
+  background-color: #fff;
+  color: #000;
 }
 .container {
   width: 100%;
@@ -29,55 +30,43 @@ header {
   height: auto;
   margin: 0 auto;
 }
-main {
-  color: #000;
-  width: 100%;
-  height: auto;
-}
-section {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
 
 /* 헤더 */
-header h1 img {
-  height: 30px;
-}
 header > .con {
   height: 100px;
   display: flex;
   gap: 100px;
 }
-h1 {
-  width: fit-content;
-  height: fit-content;
-  margin: 30px 0;
-  color: #fff;
-}
 #gnb {
   width: fit-content;
-  line-height: 100px;
+  display: flex;
+  align-items: center;
   font-weight: 300;
-  margin-left: auto;
-  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 #gnb > ul {
   width: fit-content;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   text-align: center;
 }
 #gnb > ul > li {
-  width: 100px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f4f4f4;
+  padding: 12px 24px;
+  border-radius: 100px;
 }
 #gnb > ul > li > a {
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 16px;
+
   display: block;
 }
 #gnb > ul > li:hover > a {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* sec1 */
@@ -92,8 +81,9 @@ h1 {
 .sec1 > .con {
   height: auto;
   background-color: #fff;
+  border: 1px solid #999;
   border-radius: 40px;
-  padding: 105px;
+  padding: 80px 105px;
   box-sizing: border-box;
 }
 .sec1_top {
@@ -137,15 +127,18 @@ h1 {
 .skill {
   flex: 1;
 }
+.sec1_bottom span {
+  font-size: 14px;
+}
 .sec1_bottom p {
-  font-size: 16px;
+  font-size: 17px;
   color: #444;
 }
 .sec1_bottom h4 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #444;
+  color: #000;
 }
 .sec1_bottom h3 {
   font-weight: bold;
@@ -192,6 +185,7 @@ h1 {
   width: fit-content;
   display: flex;
   gap: 4px;
+  margin-bottom: 8px;
 }
 .gauge_wrap .gauge {
   width: 10px;
@@ -280,13 +274,16 @@ h1 {
 /* 푸터 */
 footer {
   width: 100%;
-  height: fit-content;
+  height: auto;
   font-size: 18px;
   overflow: hidden;
   padding: 80px 0;
   line-height: 1.5;
-  position: relative;
   background-color: #000;
+}
+footer p,
+footer h4 {
+  color: #fff;
 }
 .info_top {
   width: 100%;
@@ -309,6 +306,7 @@ footer {
 .info_bottom_link a {
   display: flex;
   font-weight: bold;
+  color: #fff;
 }
 .info_bottom_link {
   gap: 30px;
