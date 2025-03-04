@@ -330,6 +330,9 @@ footer {
   line-height: 1.5;
   background-color: #000;
 }
+footer a {
+  color: #fff;
+}
 footer p,
 footer h4 {
   color: #fff;
