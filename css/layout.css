@@ -49,23 +49,34 @@ header > .con {
 #gnb > ul {
   width: fit-content;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   text-align: center;
+  background-color: #000;
+  border-radius: 100px;
+  padding: 10px 40px;
+  box-sizing: border-box;
 }
 #gnb > ul > li {
   width: fit-content;
   height: fit-content;
-  background-color: #f4f4f4;
-  padding: 12px 24px;
+  background-color: #000;
   border-radius: 100px;
 }
 #gnb > ul > li > a {
-  transition: 0.3s;
+  transition: 0.5s;
   font-size: 16px;
   display: block;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-sizing: border-box;
 }
-#gnb > ul > li:hover > a {
+/* #gnb > ul > li:hover > a, */
+#gnb > ul > li.active > a {
   font-weight: 500;
+  background-color: #fff;
+  color: #000;
+  transition: none;
 }
 
 main {

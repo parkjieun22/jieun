@@ -26,10 +26,14 @@ header {
   left: 0;
   z-index: 999;
 }
+/* 컨텐츠 공통 설정 */
 .con {
   width: 1600px;
   height: auto;
   margin: 0 auto;
+}
+h4 {
+  white-space: nowrap;
 }
 
 /* 헤더 */
@@ -50,24 +54,32 @@ header > .con {
 #gnb > ul {
   width: fit-content;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   text-align: center;
+  background-color: #000;
+  border-radius: 100px;
+  padding: 10px 40px;
+  box-sizing: border-box;
 }
 #gnb > ul > li {
   width: fit-content;
   height: fit-content;
-  background-color: #f4f4f4;
-  padding: 12px 24px;
+  background-color: #000;
   border-radius: 100px;
 }
 #gnb > ul > li > a {
-  transition: 0.3s;
+  transition: 0.5s;
   font-size: 16px;
-
   display: block;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-sizing: border-box;
 }
 #gnb > ul > li:hover > a {
   font-weight: 500;
+  background-color: #fff;
+  color: #000;
 }
 
 /* sec1 */
@@ -96,7 +108,7 @@ header > .con {
 .sec1_top_right {
   width: 220px;
   height: 220px;
-  border-radius: 50%;
+  border-radius: 200px;
   overflow: hidden;
 }
 .sec1_top_left h3 {

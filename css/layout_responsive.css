@@ -384,10 +384,13 @@
     font-size: 14px;
   }
   #gnb > ul > li {
-    padding: 10px 18px;
+    padding: 8px;
   }
   #gnb > ul {
-    gap: 10px;
+    padding: 6px 20px;
+  }
+  #gnb > ul > li > a {
+    padding: 8px 20px;
   }
 
   /* .con 컨텐츠 공통 영역 */
@@ -538,17 +541,38 @@
   }
 }
 
-/* 작은 모바일 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 585px) {
   /* 헤더 */
   #gnb > ul > li > a {
-    font-size: 13px;
+    font-size: 14px;
   }
   #gnb > ul > li {
     padding: 10px;
   }
   #gnb > ul {
-    gap: 8px;
+    padding: 6px 30px;
+    gap: 1px;
+  }
+  #gnb > ul > li > a {
+    padding: 6px 10px;
+  }
+}
+
+/* 작은 모바일 */
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  #gnb > ul > li > a {
+    font-size: 14px;
+  }
+  #gnb > ul > li {
+    padding: 10px;
+  }
+  #gnb > ul {
+    padding: 6px 30px;
+    gap: 1px;
+  }
+  #gnb > ul > li > a {
+    padding: 6px 10px;
   }
 
   /* .con 컨텐츠 공통 영역 */
@@ -707,5 +731,22 @@
     gap: 20px;
     text-align: center;
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  /* 헤더 */
+  #gnb > ul > li > a {
+    font-size: 12px;
+  }
+  #gnb > ul > li {
+    padding: 4px;
+  }
+  #gnb > ul {
+    padding: 6px 10px;
+    gap: 1px;
+  }
+  #gnb > ul > li > a {
+    padding: 6px;
   }
 }
