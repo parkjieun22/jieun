@@ -1,19 +1,584 @@
 /* 노트북 */
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* .con 컨텐츠 공통 영역 */
+  .con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* sec2 */
+  .sec2_leftBox {
+    width: 40%;
+    height: 100%;
+  }
+  .right_area {
+    width: 58%;
+    height: 100%;
+  }
+  .right_area_bottom {
+    gap: 30px;
+  }
+
+  /* sec3 */
+  .sticky_text {
+    width: 500px;
+  }
+  .sec3 .images {
+    width: 700px;
+  }
+  .img1 {
+    height: 280px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    height: 280px;
+  }
 }
 
 /* 중간사이즈 노트북, 큰 사이즈 테블릿 */
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
+  /* .con 컨텐츠 공통 영역 */
+  .con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* sec2 */
+  .sec2 {
+    height: 500px;
+  }
+  .sec2_leftBox {
+    width: 40%;
+    height: 100%;
+  }
+  .right_area {
+    width: 58%;
+    height: 100%;
+  }
+  .right_area_bottom {
+    height: 220px;
+    gap: 20px;
+  }
+  .sec2 .top_text h3 {
+    font-size: 24px;
+  }
+  .sec2 .text_box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sec2 .text_box p,
+  .experience_year > p {
+    font-size: 16px;
+  }
+  .sec2 .top_text img {
+    width: 24px;
+  }
+  .sec2 .text_box p br {
+    display: none;
+  }
+  .skills p,
+  .experience > p {
+    font-size: 20px;
+  }
+  .skills_logo img {
+    width: 4vw;
+    height: 100%;
+  }
+  .skills_logo div {
+    width: 100%;
+    margin-left: auto;
+  }
+  .skills_logo {
+    width: fit-content;
+  }
+
+  /* sec3 */
+  .sec3 {
+    padding: 160px 0 160px 0;
+  }
+  .sec3 .img1,
+  .sec3 .img2,
+  .sec3 .img3,
+  .sec3 .img4,
+  .sec3 .img5 {
+    border-radius: 20px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    gap: 8px;
+  }
+  .sec3 .images {
+    width: 500px;
+    gap: 8px;
+  }
+  .sticky_text {
+    width: 340px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    height: 200px;
+  }
+  .sticky_text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .sticky_text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sticky_text span {
+    font-size: 14px;
+  }
+  .sticky_text img {
+    width: 16px;
+  }
+
+  /* 푸터 */
+  footer p,
+  footer h4,
+  .info_bottom span,
+  .info_bottom p {
+    font-size: 16px;
+  }
 }
 
 /* 테블릿 중간~소 사이즈 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* .con 컨텐츠 공통 영역 */
+  .con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* sec2 */
+  .sec2 {
+    height: 500px;
+  }
+  .sec2_leftBox {
+    width: 40%;
+    height: 100%;
+  }
+  .right_area {
+    width: 58%;
+    height: 100%;
+  }
+  .right_area_bottom {
+    height: 220px;
+    gap: 20px;
+  }
+  .sec2 .top_text h3 {
+    font-size: 24px;
+  }
+  .sec2 .text_box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sec2 .text_box p,
+  .experience_year > p {
+    font-size: 16px;
+  }
+  .sec2 .top_text img {
+    width: 24px;
+  }
+  .sec2 .text_box p br {
+    display: none;
+  }
+  .skills p,
+  .experience > p {
+    font-size: 20px;
+  }
+  .skills_logo img {
+    width: 4vw;
+    height: 100%;
+  }
+  .skills_logo div {
+    width: 100%;
+    margin-left: auto;
+  }
+  .skills_logo {
+    width: fit-content;
+  }
+
+  /* sec3 */
+  .sec3 {
+    padding: 160px 0 160px 0;
+  }
+  .sec3 .img1,
+  .sec3 .img2,
+  .sec3 .img3,
+  .sec3 .img4,
+  .sec3 .img5 {
+    border-radius: 20px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    gap: 8px;
+  }
+  .sec3 .images {
+    width: 420px;
+    gap: 8px;
+  }
+  .sticky_text {
+    width: 300px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    height: 200px;
+  }
+  .sticky_text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .sticky_text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sticky_text span {
+    font-size: 14px;
+  }
+  .sticky_text img {
+    width: 16px;
+  }
+
+  /* 푸터 */
+  footer p,
+  footer h4,
+  .info_bottom span,
+  .info_bottom p {
+    font-size: 16px;
+  }
 }
 
 /* 모바일 */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 헤더 */
+  #gnb > ul > li > a {
+    font-size: 14px;
+  }
+  #gnb > ul > li {
+    padding: 10px 18px;
+  }
+  #gnb > ul {
+    gap: 10px;
+  }
+
+  /* .con 컨텐츠 공통 영역 */
+  .con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* sec1 */
+  .sec1 {
+    margin-bottom: 60px;
+  }
+
+  /* sec2 */
+  .sec2 {
+    height: auto;
+  }
+  .sec2 > .con {
+    flex-direction: column;
+  }
+  .sec2 .top_text {
+    margin: 40px 0 10px 0;
+  }
+  .sec2_leftBox {
+    width: 100%;
+    height: 300px;
+  }
+  .right_area {
+    width: 100%;
+    height: 100%;
+  }
+  .right_area_bottom {
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sec2 .text_box {
+    margin-bottom: 10px;
+  }
+  .sec2 .top_text h3 {
+    font-size: 24px;
+  }
+  .sec2 .text_box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sec2 .text_box p,
+  .experience_year > p {
+    font-size: 16px;
+  }
+  .sec2 .top_text img {
+    width: 24px;
+  }
+  .sec2 .text_box p br {
+    display: none;
+  }
+  .skills p,
+  .experience > p {
+    font-size: 20px;
+  }
+  .skills_logo img {
+    width: 8vw;
+    height: 100%;
+  }
+  .skills_logo div {
+    width: 100%;
+    margin-left: auto;
+  }
+  .skills_logo {
+    width: fit-content;
+  }
+
+  /* sec3 */
+  .sec3 {
+    padding: 60px 0;
+  }
+  .sec3 .con {
+    flex-direction: column;
+  }
+  .sticky_text {
+    width: 100%;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  /* sec3 이미지 영역 설정 */
+  .sec3 .images {
+    width: 100%;
+  }
+  .sec3 .img1,
+  .sec3 .img2,
+  .sec3 .img3,
+  .sec3 .img4,
+  .sec3 .img5 {
+    border-radius: 20px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    gap: 8px;
+  }
+  .sec3 .images {
+    width: 100%;
+    gap: 8px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    height: 200px;
+  }
+  .sticky_text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .sticky_text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sticky_text span {
+    font-size: 14px;
+  }
+  .sticky_text img {
+    width: 16px;
+  }
+
+  /* 푸터 */
+  footer p,
+  footer h4,
+  .info_bottom span,
+  .info_bottom p {
+    font-size: 12px;
+  }
+  .info_top {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .info_bottom {
+    width: fit-content;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 /* 작은 모바일 */
 @media screen and (max-width: 480px) {
+  /* 헤더 */
+  #gnb > ul > li > a {
+    font-size: 13px;
+  }
+  #gnb > ul > li {
+    padding: 10px;
+  }
+  #gnb > ul {
+    gap: 8px;
+  }
+
+  /* .con 컨텐츠 공통 영역 */
+  .con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* sec1 */
+  .sec1 {
+    margin-bottom: 60px;
+  }
+  .sec1 .con {
+    height: 400px;
+  }
+
+  /* sec2 */
+  .sec2 {
+    height: auto;
+  }
+  .sec2 > .con {
+    flex-direction: column;
+  }
+  .sec2 .top_text {
+    margin: 30px 0 10px 0;
+  }
+  .sec2_leftBox {
+    width: 100%;
+    height: 300px;
+  }
+  .right_area {
+    width: 100%;
+    height: 100%;
+  }
+  .right_area_bottom {
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sec2 .text_box {
+    margin-bottom: 10px;
+  }
+  .sec2 .top_text h3 {
+    font-size: 24px;
+  }
+  .sec2 .text_box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sec2 .text_box p,
+  .experience_year > p {
+    font-size: 16px;
+  }
+  .sec2 .top_text img {
+    width: 24px;
+  }
+  .sec2 .text_box p br {
+    display: none;
+  }
+  .skills p,
+  .experience > p {
+    font-size: 20px;
+  }
+  .skills_logo img {
+    width: 8vw;
+    height: 100%;
+  }
+  .skills_logo div {
+    width: 100%;
+    margin-left: auto;
+  }
+  .skills_logo {
+    width: fit-content;
+  }
+
+  /* sec3 */
+  .sec3 {
+    padding: 60px 0;
+  }
+  .sec3 .con {
+    flex-direction: column;
+  }
+  .sticky_text {
+    width: 100%;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  /* sec3 이미지 영역 설정 */
+  .sec3 .images {
+    width: 100%;
+  }
+  .sec3 .img1,
+  .sec3 .img2,
+  .sec3 .img3,
+  .sec3 .img4,
+  .sec3 .img5 {
+    border-radius: 20px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    gap: 8px;
+  }
+  .sec3 .images {
+    width: 100%;
+    gap: 8px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    height: 200px;
+  }
+  .sticky_text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .sticky_text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sticky_text span {
+    font-size: 14px;
+  }
+  .sticky_text img {
+    width: 16px;
+  }
+
+  /* 푸터 */
+  footer p,
+  footer h4,
+  .info_bottom span,
+  .info_bottom p {
+    font-size: 12px;
+  }
+  .info_top {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .info_bottom {
+    width: fit-content;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
 }
