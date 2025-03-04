@@ -257,6 +257,125 @@
     font-size: 16px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 880px) {
+  /* sec1 */
+  .sec1 {
+    margin-bottom: 60px;
+  }
+
+  /* sec2 */
+  .sec2 {
+    height: auto;
+  }
+  .sec2 > .con {
+    flex-direction: column;
+  }
+  .sec2 .top_text {
+    margin: 40px 0 10px 0;
+  }
+  .sec2_leftBox {
+    width: 100%;
+    height: 300px;
+  }
+  .right_area {
+    width: 100%;
+    height: 100%;
+  }
+  .right_area_bottom {
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sec2 .text_box {
+    margin-bottom: 10px;
+  }
+  .sec2 .top_text h3 {
+    font-size: 24px;
+  }
+  .sec2 .text_box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sec2 .text_box p,
+  .experience_year > p {
+    font-size: 16px;
+  }
+  .sec2 .top_text img {
+    width: 24px;
+  }
+  .sec2 .text_box p br {
+    display: none;
+  }
+  .skills p,
+  .experience > p {
+    font-size: 20px;
+  }
+  .skills_logo img {
+    width: 8vw;
+    height: 100%;
+  }
+  .skills_logo div {
+    width: 100%;
+    margin-left: auto;
+  }
+  .skills_logo {
+    width: fit-content;
+  }
+
+  /* sec3 */
+  .sec3 {
+    padding: 60px 0;
+  }
+  .sec3 .con {
+    flex-direction: column;
+  }
+  .sticky_text {
+    width: 100%;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  /* sec3 이미지 영역 설정 */
+  .sec3 .images {
+    width: 100%;
+  }
+  .sec3 .img1,
+  .sec3 .img2,
+  .sec3 .img3,
+  .sec3 .img4,
+  .sec3 .img5 {
+    border-radius: 20px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    gap: 8px;
+  }
+  .sec3 .images {
+    width: 100%;
+    gap: 8px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .img_wrap1,
+  .img_wrap2 {
+    height: 200px;
+  }
+  .sticky_text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .sticky_text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sticky_text span {
+    font-size: 14px;
+  }
+  .sticky_text img {
+    width: 16px;
+  }
+}
 
 /* 모바일 */
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -459,7 +578,7 @@
   }
   .sec2_leftBox {
     width: 100%;
-    height: 300px;
+    height: 200px;
   }
   .right_area {
     width: 100%;
@@ -495,7 +614,7 @@
     font-size: 20px;
   }
   .skills_logo img {
-    width: 8vw;
+    width: 10vw;
     height: 100%;
   }
   .skills_logo div {
@@ -504,6 +623,14 @@
   }
   .skills_logo {
     width: fit-content;
+  }
+  .experience_year,
+  .skills_logo {
+    margin-top: 20px;
+  }
+  .experience,
+  .skills {
+    padding: 30px 40px;
   }
 
   /* sec3 */
@@ -515,7 +642,7 @@
   }
   .sticky_text {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: static;
   }
 
