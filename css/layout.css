@@ -341,6 +341,7 @@ footer {
   background-color: #000;
 }
 footer a {
+  /* a태그 없지만 모바일에서 번호가 a태그로 인식, 검정으로 보여서 */
   color: #fff;
 }
 footer p,
