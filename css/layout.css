@@ -71,12 +71,11 @@ header > .con {
   border-radius: 50px;
   box-sizing: border-box;
 }
-/* #gnb > ul > li:hover > a, */
+
 #gnb > ul > li.active > a {
   font-weight: 500;
   background-color: #fff;
   color: #000;
-  transition: none;
 }
 
 main {

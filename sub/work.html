@@ -6,33 +6,30 @@
     <title>I'm Jieun</title>
 
     <!-- css 연결 -->
-    <link rel="stylesheet" href="../css/work.css" />
+    <link rel="stylesheet" href="../css/about_me.css" />
+    <link rel="stylesheet" href="../css/about_me_responsive.css" />
   </head>
   <body>
     <div class="container">
       <header>
         <div class="con">
-          <!-- 로고 -->
-          <h1>
-            <a href="../index.html"><img src="../img/logo.svg" alt="logo" /></a>
-          </h1>
           <!-- 메뉴 -->
           <nav id="gnb">
-            <ul>
-              <li>
-                <a href="../sub/about_me.html">About me</a>
+            <ul class="e">
+              <li class="gnbBtn">
+                <a id="index" href="../index.html">Main</a>
               </li>
 
-              <li>
-                <a href="../sub/work.html">Work</a>
+              <li class="gnbBtn">
+                <a id="about_me" href="./about_me.html">About me</a>
               </li>
 
-              <li>
-                <a href="#">Contact</a>
+              <li class="gnbBtn">
+                <a id="work" href="../sub/work.html">Work</a>
               </li>
 
-              <li>
-                <a href="#">Community</a>
+              <li class="gnbBtn">
+                <a id="contact" href="#">Contact</a>
               </li>
             </ul>
           </nav>
@@ -41,11 +38,14 @@
 
       <!-- 컨텐츠영역 (1600) -->
       <main>
-        <div class="con">
-          <section id="sec1">
-            <p>하이루</p>
-          </section>
-        </div>
+        <section class="sec1">
+          <div class="con"></div>
+        </section>
+
+        <!-- sec2 -->
+        <section class="sec2">
+          <div class="con"></div>
+        </section>
       </main>
 
       <!-- 푸터 -->
@@ -90,6 +90,6 @@
     </div>
 
     <!-- js -->
-    <script src="../js/aboutme.js"></script>
+    <script src="../js/gnb.js"></script>
   </body>
 </html>

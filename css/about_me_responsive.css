@@ -128,7 +128,7 @@
     text-align: center;
   }
   .sec1_top_left p {
-    line-height: 24px;
+    font-size: 18px;
     line-height: 1.5;
     text-align: center;
   }
@@ -172,12 +172,15 @@
   .view2 a,
   .view3 a {
     font-size: 16px;
+    gap: 8px;
+    overflow: hidden;
   }
   .view1 a img,
   .view2 a img,
   .view3 a img {
-    width: 30%;
     margin-top: 4px;
+    width: 56px; /* %로 줄이면 오른쪽에 여백생김 */
+    height: auto;
   }
 
   /* 푸터 */
@@ -212,6 +215,87 @@
     margin: 0 auto;
   }
 
+  /* sec1 */
+  .sec1 > .con {
+    padding: 60px 40px;
+  }
+  .sec1_top {
+    flex-direction: column-reverse;
+  }
+  .sec1_top_right {
+    margin-bottom: 40px;
+  }
+  .sec1_top_left br {
+    display: none;
+  }
+  .sec1_top_left h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sec1_top_left p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sec1_bottom {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px auto;
+    margin-bottom: 0;
+  }
+  .sec1_bottom h3 {
+    font-size: 17px;
+  }
+  .sec1_bottom h4 {
+    font-size: 15px;
+  }
+  .sec1_bottom span {
+    font-size: 13px;
+  }
+  .sec1_bottom p {
+    font-size: 14px;
+  }
+  .sec1_bottom p br {
+    display: none;
+  }
+  .skill {
+    flex: 0;
+  }
+  .gauge_wrap .gauge {
+    width: 7px;
+    height: 7px;
+    background-color: #444;
+  }
+
+  /* ↓ 250304 수정중(흰색 영역 조정중) ↓ */
+  /* sec2 */
+  .sec2 {
+    margin: 40px 0;
+  }
+  .view1,
+  .view2,
+  .view3 {
+    height: 100px;
+  }
+  .view1 a,
+  .view2 a,
+  .view3 a {
+    font-size: 16px;
+    gap: 8px;
+    overflow: hidden;
+    padding: 18px 38px;
+    top: 24px; /* 보기버튼 위치고정 */
+    margin-left: 30px;
+  }
+  .view1 a img,
+  .view2 a img,
+  .view3 a img {
+    margin-top: 4px;
+    width: 40px; /* %로 줄이면 오른쪽에 여백생김 */
+    height: auto;
+  }
+
   /* 푸터 */
   footer p,
   footer h4,
@@ -232,6 +316,13 @@
     gap: 20px;
     text-align: center;
     margin-top: 60px;
+  }
+
+  @media (max-width: 625px) {
+    .sec1_bottom {
+      width: 70%;
+      text-align: center;
+    }
   }
 }
 
@@ -274,6 +365,88 @@
     width: 90%;
     height: auto;
     margin: 0 auto;
+  }
+
+  /* sec1 */
+  .sec1 > .con {
+    padding: 60px 40px;
+  }
+  .sec1_top {
+    flex-direction: column-reverse;
+  }
+  .sec1_top_right {
+    margin-bottom: 40px;
+  }
+  .sec1_top_left br {
+    display: none;
+  }
+  .sec1_top_left h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sec1_top_left p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sec1_bottom {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .sec1_bottom h3 {
+    font-size: 17px;
+  }
+  .sec1_bottom h4 {
+    font-size: 15px;
+  }
+  .sec1_bottom span {
+    font-size: 13px;
+  }
+  .sec1_bottom p {
+    font-size: 14px;
+  }
+  .sec1_bottom p br {
+    display: none;
+  }
+  .skill {
+    flex: 0;
+  }
+  .gauge_wrap .gauge {
+    width: 7px;
+    height: 7px;
+    background-color: #444;
+  }
+
+  /* ↓ 250304 수정중(흰색 영역 조정중) ↓ */
+  /* sec2 */
+  .sec2 {
+    margin: 40px 0;
+  }
+  .view1,
+  .view2,
+  .view3 {
+    height: 100px;
+  }
+  .view1 a,
+  .view2 a,
+  .view3 a {
+    font-size: 16px;
+    gap: 8px;
+    overflow: hidden;
+    padding: 18px 38px;
+    top: 24px; /* 보기버튼 위치고정 */
+    margin-left: 30px;
+  }
+  .view1 a img,
+  .view2 a img,
+  .view3 a img {
+    margin-top: 4px;
+    width: 40px; /* %로 줄이면 오른쪽에 여백생김 */
+    height: auto;
   }
 
   /* 푸터 */

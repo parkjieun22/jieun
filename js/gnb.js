@@ -1,20 +1,23 @@
-document.querySelectorAll("#gnb > ul > li").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    // 기존 active 해제
-    document.querySelectorAll("#gnb > ul > li").forEach((el) => {
-      el.classList.remove("active");
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll("#gnb > ul > li");
 
-    // 클릭한 요소에 active 추가
-    item.classList.add("active");
-  });
+  // 기존에 저장된 active 메뉴가 있으면 불러오기
+  const savedActive = localStorage.getItem("activeMenu");
+  if (savedActive) {
+    document.getElementById(savedActive)?.parentElement.classList.add("active");
+  }
 
-  // 마우스가 떠났을 때 hover 해제 방지
-  item.addEventListener("mouseenter", () => {
-    document.querySelectorAll("#gnb > ul > li").forEach((el) => {
-      if (!el.classList.contains("active")) {
-        el.classList.remove("active");
-      }
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      // 모든 메뉴에서 active 제거
+      menuItems.forEach((el) => el.classList.remove("active"));
+
+      // 클릭한 메뉴에 active 추가
+      this.classList.add("active");
+
+      // localStorage에 저장 (a 태그의 ID 저장)
+      const menuId = this.querySelector("a").id;
+      localStorage.setItem("activeMenu", menuId);
     });
   });
 });

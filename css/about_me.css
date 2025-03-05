@@ -76,7 +76,7 @@ header > .con {
   border-radius: 50px;
   box-sizing: border-box;
 }
-#gnb > ul > li:hover > a {
+#gnb > ul > li.active > a {
   font-weight: 500;
   background-color: #fff;
   color: #000;
@@ -253,7 +253,7 @@ header > .con {
   box-sizing: border-box;
   border-radius: 100px;
   position: absolute; /* 보기버튼 위치고정 */
-  top: 37px; /* 보기버튼 위치고정 */
+  top: 36px; /* 보기버튼 위치고정 */
 }
 .view1 a img,
 .view2 a img,
