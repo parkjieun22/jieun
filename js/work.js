@@ -63,9 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   menuItems.forEach((item) => {
-    item.addEventListener("click", function (event) {
-      event.preventDefault(); // 링크 이동 방지 (필요 시 제거)
-
+    item.addEventListener("click", function () {
       // 모든 메뉴에서 active 제거
       menuItems.forEach((el) => el.classList.remove("active"));
 
@@ -73,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
 
       // localStorage에 저장 (a 태그의 ID 저장)
-      localStorage.setItem("activeMenu", this.id);
+      const menuId = this.querySelector("a").id;
+      localStorage.setItem("activeMenu", menuId);
     });
   });
 });
