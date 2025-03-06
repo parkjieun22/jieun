@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// =========================================================================================
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   const menuItems = document.querySelectorAll("#gnb > ul > li");
 

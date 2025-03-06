@@ -1,3 +1,4 @@
+// 서브메뉴 내용 변경
 document.querySelector(".view1 a").addEventListener("click", function (e) {
   e.preventDefault();
   document.querySelector(".view1").classList.toggle("active");

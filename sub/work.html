@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I'm Jieun</title>
+    <title>Jieun's Work</title>
 
     <!-- css 연결 -->
     <link rel="stylesheet" href="../css/work.css" />
@@ -40,6 +40,7 @@
         <section class="sec1">
           <div class="con">
             <h2>Work</h2>
+            <p>이미지를 클릭하면</p>
           </div>
         </section>
 
@@ -47,11 +48,11 @@
         <section class="sec2">
           <div class="con">
             <div class="submenu">
-              <a href="#">상세페이지</a>
-              <a href="#">배너</a>
-              <a href="#">광고</a>
-              <a href="#">촬영</a>
-              <a href="#">웹페이지 제작</a>
+              <a href="#" id="detail">상세페이지</a>
+              <a href="#" id="banner">배너</a>
+              <a href="#" id="ad">광고</a>
+              <a href="#" id="photo">촬영</a>
+              <a href="#" id="webpage">웹페이지 제작</a>
             </div>
 
             <!-- 상세페이지 -->
@@ -96,6 +97,7 @@
                     data-src="../img/work/detail_page/detail4.jpg"
                     class="pic"
                   />
+
                   <p>겨울잠에서 깨어나는</p>
                 </div>
 
@@ -119,28 +121,220 @@
                   <p>겨울잠에서 깨어나는</p>
                 </div>
               </div>
-
-              <!-- 라이트박스 -->
-              <div id="light_box">
-                <img
-                  src="../img/work/detail_page/detail1.jpg"
-                  alt="기본이미지"
-                  id="light_box_img"
-                />
-              </div>
             </div>
 
             <!-- 배너 -->
-            <div class="content_wrap submenu2"></div>
+            <div class="content_wrap submenu2">
+              <div class="banner1">
+                <img
+                  src="../img/work/banner/banner1.jpg"
+                  alt="배너1"
+                  data-src="../img/work/banner/banner1_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="banner2">
+                <img src="../img/work/banner/banner2.jpg" alt="배너2"
+                data-src="../img/work/banner/banner2_mockup.jpg"" class="pic" />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="banner3">
+                <img src="../img/work/banner/banner3.png" alt="배너3"
+                data-src="../img/work/banner/banner3_mockup.jpg"" class="pic" />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="banner4">
+                <img src="../img/work/banner/banner4.png" alt="배너4"
+                data-src="../img/work/banner/banner4_mockup.jpg"" class="pic" />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="banner5">
+                <img src="../img/work/banner/banner5.jpg" alt="배너5"
+                data-src="../img/work/banner/banner5_mockup.jpg"" class="pic" />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="banner6">
+                <img src="../img/work/banner/banner6.jpg" alt="배너6"
+                data-src="../img/work/banner/banner6_mockup.jpg"" class="pic" />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+            </div>
 
             <!-- 광고 -->
-            <div class="content_wrap submenu3"></div>
+            <div class="content_wrap submenu3">
+              <div class="row_wrap">
+                <div class="ad1">
+                  <img
+                    src="../img/work/ad/ad1.jpg"
+                    alt="상세페이지1"
+                    data-src="../img/work/ad/ad1_mockup.jpg"
+                    class="pic"
+                  />
+                  <p>겨울잠에서 깨어나는</p>
+                </div>
+
+                <div class="ad2">
+                  <img
+                    src="../img/work/ad/ad2.jpg"
+                    alt="상세페이지2"
+                    data-src="../img/work/ad/ad2_mockup.jpg"
+                    class="pic"
+                  />
+                  <p>겨울잠에서 깨어나는</p>
+                </div>
+
+                <div class="ad3">
+                  <img
+                    src="../img/work/ad/ad3.jpg"
+                    alt="상세페이지3"
+                    data-src="../img/work/ad/ad3_mockup.jpg"
+                    class="pic"
+                  />
+                  <p>겨울잠에서 깨어나는</p>
+                </div>
+              </div>
+
+              <div class="row_wrap">
+                <div class="ad4">
+                  <img
+                    src="../img/work/ad/ad4.jpg"
+                    alt="상세페이지4"
+                    data-src="../img/work/ad/ad4_mockup.jpg"
+                    class="pic"
+                  />
+
+                  <p>겨울잠에서 깨어나는</p>
+                </div>
+
+                <div class="ad5">
+                  <img
+                    src="../img/work/ad/ad5.jpg"
+                    alt="상세페이지5"
+                    data-src="../img/work/ad/ad5_mockup.jpg"
+                    class="pic"
+                  />
+                  <p>겨울잠에서 깨어나는</p>
+                </div>
+
+                <div class="ad6">
+                  <img
+                    src="../img/work/ad/ad6.jpg"
+                    alt="상세페이지6"
+                    data-src="../img/work/ad/ad6_mockup.jpg"
+                    class="pic"
+                  />
+                  <p>겨울잠에서 깨어나는</p>
+                </div>
+              </div>
+            </div>
 
             <!-- 촬영 -->
-            <div class="content_wrap submenu4"></div>
+            <div class="content_wrap submenu4">
+              <div class="row_wrap">
+                <div class="photo1">
+                  <img
+                    src="../img/work/photo/photo1.jpg"
+                    alt="촬영1"
+                    data-src="../img/work/photo/photo_detail1.jpg"
+                    class="pic"
+                  />
+                </div>
+
+                <div class="photo2">
+                  <img
+                    src="../img/work/photo/photo2.jpg"
+                    alt="촬영2"
+                    data-src="../img/work/photo/photo_detail2.jpg"
+                    class="pic"
+                  />
+                </div>
+
+                <div class="photo3">
+                  <img
+                    src="../img/work/photo/photo3.jpg"
+                    alt="촬영3"
+                    data-src="../img/work/photo/photo_detail3.jpg"
+                    class="pic"
+                  />
+                </div>
+              </div>
+
+              <div class="row_wrap">
+                <div class="photo4">
+                  <img
+                    src="../img/work/photo/photo4.jpg"
+                    alt="촬영4"
+                    data-src="../img/work/photo/photo_detail4.jpg"
+                    class="pic"
+                  />
+                </div>
+
+                <div class="photo5">
+                  <img
+                    src="../img/work/photo/photo5.jpg"
+                    alt="촬영5"
+                    data-src="../img/work/photo/photo_detail5.jpg"
+                    class="pic"
+                  />
+                </div>
+
+                <div class="photo6">
+                  <img
+                    src="../img/work/photo/photo6.jpg"
+                    alt="촬영6"
+                    data-src="../img/work/photo/photo_detail6.jpg"
+                    class="pic"
+                  />
+                </div>
+              </div>
+
+              <div class="row_wrap">
+                <div class="photo4">
+                  <img
+                    src="../img/work/photo/photo4.jpg"
+                    alt="촬영4"
+                    data-src="../img/work/photo/photo_detail4.jpg"
+                    class="pic"
+                  />
+                </div>
+
+                <div class="photo5">
+                  <img
+                    src="../img/work/photo/photo5.jpg"
+                    alt="촬영5"
+                    data-src="../img/work/photo/photo_detail5.jpg"
+                    class="pic"
+                  />
+                </div>
+
+                <div class="photo6">
+                  <img
+                    src="../img/work/photo/photo6.jpg"
+                    alt="촬영6"
+                    data-src="../img/work/photo/photo_detail6.jpg"
+                    class="pic"
+                  />
+                </div>
+              </div>
+            </div>
 
             <!-- 웹페이지 제작 -->
             <div class="content_wrap submenu5"></div>
+          </div>
+
+          <!-- 라이트박스 -->
+          <div id="light_box">
+            <img
+              src="../img/work/detail_page/detail1.jpg"
+              alt="기본이미지"
+              id="light_box_img"
+            />
           </div>
         </section>
       </main>

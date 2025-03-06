@@ -93,6 +93,17 @@ header > .con {
   font-size: 50px;
   font-weight: bold;
 }
+.sec1 .con {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.sec1 p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 10px;
+}
 
 /* 라이트박스 */
 #light_box {
@@ -109,7 +120,6 @@ header > .con {
   z-index: 999;
   overflow: auto;
 }
-
 #light_box img {
   position: absolute;
   top: 100px;
@@ -124,38 +134,45 @@ header > .con {
   font-size: 20px;
   font-weight: 500;
   display: flex;
+  gap: 4px;
 }
 .submenu a {
-  padding: 10px 24px;
+  padding: 10px 18px;
+  transition: 0.3s;
 }
-.submenu a.active {
+.submenu a.active,
+.submenu a:hover {
   background-color: #000;
   color: #fff;
-  padding: 10px 24px;
+  padding: 10px 18px;
   border-radius: 100px;
 }
 
-/* 상세페이지 submenu1 */
-.submenu1 {
+/* 상세페이지 submenu1, 광고 submenu3 */
+.submenu1,
+.submenu3 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 60px;
   margin-bottom: 200px;
 }
-.row_wrap {
+.submenu1 .row_wrap,
+.submenu3 .row_wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.row_wrap p {
+.submenu1 .row_wrap p,
+.submenu3 .row_wrap p {
   padding: 20px 20px 0 20px;
   box-sizing: border-box;
   color: #555555;
   font-size: 20px;
   cursor: pointer;
 }
-.submenu1 img {
+.submenu1 img,
+.submenu3 img {
   width: 500px;
   height: 500px;
   background-color: #000;
@@ -164,6 +181,75 @@ header > .con {
   object-fit: cover;
   cursor: pointer;
 }
+/* ================= 상세페이지 submenu1 끝 ================= */
+
+/*  배너 submenu2 */
+.submenu2 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 200px;
+}
+.submenu2 p {
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  color: #555555;
+  font-size: 20px;
+  cursor: pointer;
+}
+.submenu2 img {
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* ================= 배너 submenu2  끝 ================= */
+
+/* 촬영 submenu4 */
+/* .submenu4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 200px;
+}
+.submenu4 img {
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+  border-radius: 40px;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+} */
+
+.submenu4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+.submenu4 img {
+  width: 536px;
+  height: 536px;
+  background-color: #000;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+.submenu4 .row_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.submenu4 .row_wrap div {
+  padding: 20px;
+}
+
+/* ================= 촬영 submenu3  끝 ================= */
 
 /* 푸터 */
 footer {

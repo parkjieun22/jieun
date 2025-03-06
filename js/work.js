@@ -49,3 +49,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // 기본으로 첫 번째 컨텐츠 보이게 설정
   document.querySelector(".submenu1").style.display = "flex";
 });
+
+// --------------------------------------------------------------------
+
+// 서브메뉴 active 효과
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".submenu a");
+
+  // 기존에 저장된 active 메뉴가 있으면 불러오기
+  const savedActive = localStorage.getItem("activeMenu");
+  if (savedActive) {
+    document.getElementById(savedActive)?.classList.add("active");
+  }
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function (event) {
+      event.preventDefault(); // 링크 이동 방지 (필요 시 제거)
+
+      // 모든 메뉴에서 active 제거
+      menuItems.forEach((el) => el.classList.remove("active"));
+
+      // 클릭한 메뉴에 active 추가
+      this.classList.add("active");
+
+      // localStorage에 저장 (a 태그의 ID 저장)
+      localStorage.setItem("activeMenu", this.id);
+    });
+  });
+});
