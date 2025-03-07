@@ -290,14 +290,15 @@ header > .con {
   margin-top: 8px;
 }
 
-/* 아코디언 */
+/* 아코디언 (folder) */
 .view1 {
   width: 100%;
-  background: url(../img/aboutme/sec2/img1.jpg) center/cover no-repeat;
-  transition: height 0.3s linear;
+  background-color: #000;
+  /* background: url(../img/aboutme/sec2/img3.jpg) center/cover no-repeat; */
+  transition: height 0.5s ease;
   overflow: hidden;
 }
-.view2 {
+/* .view2 {
   background: url(../img/aboutme/sec2/img2.jpg) center/cover no-repeat;
   transition: height 0.3s linear;
   overflow: hidden;
@@ -306,11 +307,28 @@ header > .con {
   background: url(../img/aboutme/sec2/img3.jpg) center/cover no-repeat;
   transition: height 0.3s linear;
   overflow: hidden;
-}
+} */
 .view1.active,
 .view2.active,
 .view3.active {
-  height: 300px;
+  height: 400px;
+  position: relative;
+}
+.folder_text {
+  color: #fff;
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+.folder_text h4 {
+  font-weight: bold;
+}
+.folder_text p {
+  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 
 /* 푸터 */
