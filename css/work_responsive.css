@@ -48,6 +48,56 @@
     height: auto;
     margin: 0 auto;
   }
+  #light_box img {
+    position: absolute;
+    top: 100px;
+    width: 540px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding-bottom: 100px;
+  }
+
+  .sec1 p {
+    font-size: 14px;
+  }
+  .submenu {
+    font-size: 2.3vw;
+  }
+  .submenu a {
+    padding: 10px 16px;
+  }
+  .submenu a.active,
+  .submenu a:hover {
+    padding: 10px 16px;
+  }
+  .submenu1,
+  .submenu2,
+  .submenu3,
+  .submenu4,
+  .submenu5 {
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  .submenu2 img {
+    max-height: 200px;
+    border-radius: 20px;
+  }
+  .submenu1 img,
+  .submenu3 img,
+  .submenu4 img,
+  .submenu5 img {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 20px;
+  }
+  .submenu2 p,
+  .submenu1 .row_wrap p,
+  .submenu3 .row_wrap p,
+  .submenu5 .row_wrap span {
+    font-size: 2vw;
+    padding: 10px 10px 0 10px;
+  }
 
   /* 푸터 */
   footer p,
@@ -81,9 +131,68 @@
     margin: 0 auto;
   }
 
-  /* sec1 */
+  #light_box img {
+    position: absolute;
+    top: 100px;
+    width: 70vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding-bottom: 100px;
+  }
+
   .sec1 {
-    margin-bottom: 60px;
+    font-size: 10vw;
+    font-weight: bold;
+  }
+  .sec1 .con {
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sec1 h2 {
+    margin: 0 auto;
+  }
+  .sec1 p {
+    font-size: 14px;
+  }
+  .submenu {
+    font-size: 3.2vw;
+    justify-content: center;
+  }
+  .submenu a {
+    padding: 10px 16px;
+  }
+  .submenu a.active,
+  .submenu a:hover {
+    padding: 10px 16px;
+  }
+  .submenu1,
+  .submenu2,
+  .submenu3,
+  .submenu4,
+  .submenu5 {
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  .submenu2 img {
+    max-height: 200px;
+    border-radius: 20px;
+  }
+  .submenu1 img,
+  .submenu3 img,
+  .submenu4 img,
+  .submenu5 img {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 20px;
+  }
+  .submenu2 p,
+  .submenu1 .row_wrap p,
+  .submenu3 .row_wrap p,
+  .submenu5 .row_wrap span {
+    font-size: 2.6vw;
+    padding: 10px 10px 0 10px;
   }
 
   /* 푸터 */
@@ -150,9 +259,74 @@
     margin: 0 auto;
   }
 
-  /* sec1 */
+  #light_box img {
+    position: absolute;
+    top: 100px;
+    width: 70vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding-bottom: 100px;
+  }
+
   .sec1 {
-    margin-bottom: 60px;
+    font-size: 10vw;
+    font-weight: bold;
+    margin-top: 100px;
+    height: 150px;
+  }
+  .sec1 .con {
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sec1 h2 {
+    margin: 0 auto;
+  }
+  .sec1 p {
+    font-size: 14px;
+  }
+  .submenu {
+    font-size: clamp(12px, 3vw, 3vw);
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .submenu a {
+    padding: 10px 16px;
+  }
+  .submenu a.active,
+  .submenu a:hover {
+    padding: 10px 16px;
+  }
+  .submenu1,
+  .submenu2,
+  .submenu3,
+  .submenu4,
+  .submenu5 {
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  .submenu2 img {
+    max-height: 200px;
+    border-radius: 20px;
+  }
+  .submenu1 img,
+  .submenu3 img,
+  .submenu4 img,
+  .submenu5 img {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 20px;
+  }
+  .submenu2 p,
+  .submenu1 .row_wrap p,
+  .submenu3 .row_wrap p,
+  .submenu5 .row_wrap span {
+    font-size: 2.6vw;
+    padding: 10px 10px 0 10px;
+    font-weight: 500;
   }
 
   /* 푸터 */
