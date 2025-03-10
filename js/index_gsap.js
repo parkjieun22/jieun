@@ -8,19 +8,30 @@ gsap.from(".hello_hand, .main_visual_text p", {
 // -------------------------------------------------------------------------------
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(".sec2 > .con h3, .sec2 > .con p", {
-  opacity: 0,
-  y: 100,
-  duration: 1.5,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".sec2",
-    start: "top 100%",
-    end: "top 50%",
-    // markers: true,
-    scrub: 1,
+gsap.set(".sec2 > .con h3, .sec2 > .con p", { y: 500, opacity: 0 });
+
+gsap.fromTo(
+  ".sec2 > .con h3, .sec2 > .con p",
+  {
+    // 시작
+    opacity: 0,
+    y: 100,
   },
-});
+  {
+    // 끝
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".sec2",
+      start: "top 100%",
+      end: "top 50%",
+      // markers: true,
+      scrub: 1,
+    },
+  }
+);
 
 // -------------------------------------------------------------------------------
 
@@ -40,70 +51,110 @@ ScrollTrigger.batch(".sec3 .con a", {
 
 // -------------------------------------------------------------------------------
 
-// GSAP 애니메이션 설정
-gsap.set(".more_img_wrap .image", { opacity: 0, y: 20 }); // 처음 상태 설정
+// 초기 설정
+gsap.set(".more_img_wrap", { opacity: 0, display: "none" });
+gsap.set(".more_img_wrap img", { y: 20, x: 0 });
 
 document.querySelector(".more a").addEventListener("mouseenter", () => {
+  gsap.set(".more_img_wrap", { display: "flex" });
+  gsap.set(".more_img_wrap img", { y: 20, x: 0 });
+
   gsap.to(".more_img_wrap", {
     opacity: 1,
-    y: -40,
-    duration: 1,
-    stagger: 0.2,
+    y: -60,
+    duration: 0.5,
+    ease: "power3.inOut",
   });
 
-  gsap.to(".more_img_wrap .image1", {
+  // 캐릭터들
+  gsap.to(".more_img_wrap .image2, .more_img_wrap .image4", {
     opacity: 1,
-    duration: 0.3,
+    duration: 0.5,
+    ease: "power3.inOut",
     stagger: {
-      amount: 0.3,
+      amount: 0.02,
+      from: "random",
     },
-    scale: () => {
-      return Math.random() * 0.4 + 0.8;
-    },
-    y: () => {
-      return Math.random() * -80 + 10;
-    },
+    scale: () => Math.random() * 0.2 + 0.6,
+    y: () => Math.random() * -50 + 25,
+    x: () => Math.random() * 10 - 10,
+    rotate: () => Math.random() * 20,
   });
-  gsap.to(".more_img_wrap .image2", {
-    opacity: 1,
-    duration: 0.3,
+
+  // 콘페티들
+  gsap.to(
+    ".more_img_wrap .image1, .more_img_wrap .image3, .more_img_wrap .image5",
+    {
+      opacity: 1,
+      duration: 0.5,
+      ease: "power3.inOut",
+      stagger: {
+        amount: 0.2,
+        from: "random",
+      },
+      scale: () => Math.random() * 0.4 + 0.2,
+      y: () => Math.random() * -20 + 20,
+      x: () => Math.random() * 30 - 30,
+      rotate: () => Math.random() * 360,
+    }
+  );
+});
+
+// 마우스 아웃
+document.querySelector(".more a").addEventListener("mouseleave", () => {
+  gsap.to(".more_img_wrap .image", {
+    opacity: 0,
+    duration: 0.2,
+    ease: "power2.in",
     stagger: {
-      amount: 0.3,
+      amount: 0.1,
+      from: "random",
     },
-    scale: () => {
-      return Math.random() * 0.4 + 0.8;
-    },
-    y: () => {
-      return Math.random() * -80 + 10;
-    },
+    y: 0,
+    x: 0,
+    scale: 0,
   });
-  gsap.to(".more_img_wrap .image3", {
-    opacity: 1,
+
+  gsap.to(".more_img_wrap", {
+    opacity: 0,
     duration: 0.3,
-    stagger: {
-      amount: 0.3,
-    },
-    scale: () => {
-      return Math.random() * 0.4 + 0.8;
-    },
-    y: () => {
-      return Math.random() * -80 + 10;
+    ease: "power2.in",
+    onComplete: () => {
+      gsap.set(".more_img_wrap", { display: "none" });
     },
   });
 });
 
-document.querySelector(".more a").addEventListener("mouseleave", () => {
-  // 마우스가 버튼을 벗어날 때 이미지들이 다시 사라지도록 설정
-  gsap.to(".more_img_wrap .image", {
-    opacity: 0,
-    y: 20,
-    duration: 0.5,
-    stagger: 0.2, // 이미지들이 순차적으로 사라짐
-  });
+// sec4 올라옴 애니메이션
+// gsap.set(".sec4", { y: 500, opacity: 0 });
 
-  gsap.to(".more_img_wrap", {
-    opacity: 0,
-    y: 20,
-    duration: 0.5,
-  });
+// gsap.to(".sec4", {
+//   scrollTrigger: {
+//     trigger: ".sec3",
+//     start: "bottom 100%", // sec4가 화면에 나타날 때 실행
+//     end: "bottom 100%",
+//     scrub: 3,
+//     // markers: true,
+//   },
+//   y: 0,
+//   opacity: 1,
+//   duration: 3,
+//   ease: "elastic",
+// });
+
+// sec4 텍스트 움직임
+gsap.set(".sec4 p", { x: -1000, opacity: 0 });
+
+gsap.to(".sec4 p", {
+  scrollTrigger: {
+    trigger: ".sec4",
+    start: "bottom 100%", // sec4가 화면에 나타날 때 실행
+    end: "bottom 100%",
+    scrub: 3,
+    // markers: true,
+  },
+  x: 0,
+  opacity: 1,
+  duration: 3,
+  ease: "elastic",
 });
