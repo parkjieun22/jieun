@@ -51,7 +51,7 @@ ScrollTrigger.batch(".sec3 .con a", {
 
 // -------------------------------------------------------------------------------
 
-// 초기 설정
+// 더보기 뒤 애니메이션들
 gsap.set(".more_img_wrap", { opacity: 0, display: "none" });
 gsap.set(".more_img_wrap img", { y: 20, x: 0 });
 
@@ -125,22 +125,7 @@ document.querySelector(".more a").addEventListener("mouseleave", () => {
   });
 });
 
-// sec4 올라옴 애니메이션
-// gsap.set(".sec4", { y: 500, opacity: 0 });
-
-// gsap.to(".sec4", {
-//   scrollTrigger: {
-//     trigger: ".sec3",
-//     start: "bottom 100%", // sec4가 화면에 나타날 때 실행
-//     end: "bottom 100%",
-//     scrub: 3,
-//     // markers: true,
-//   },
-//   y: 0,
-//   opacity: 1,
-//   duration: 3,
-//   ease: "elastic",
-// });
+// -------------------------------------------------------------------------------
 
 // sec4 텍스트 움직임
 gsap.set(".sec4 p", { x: -1000, opacity: 0 });

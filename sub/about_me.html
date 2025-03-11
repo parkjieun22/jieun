@@ -8,29 +8,27 @@
     <!-- css 연결 -->
     <link rel="stylesheet" href="../css/about_me.css" />
     <link rel="stylesheet" href="../css/about_me_responsive.css" />
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
         <div class="con">
+          <h1>
+            <a href="/">Jieun</a>
+          </h1>
           <!-- 메뉴 -->
           <nav id="gnb">
             <ul class="e">
               <li class="gnbBtn">
-                <a id="index" href="../index.html">Main</a>
-              </li>
-
-              <li class="gnbBtn">
-                <a id="about_me" href="./about_me.html">About me</a>
+                <a id="about_me" href="../sub/about_me.html">About me</a>
               </li>
 
               <li class="gnbBtn">
                 <a id="work" href="../sub/work.html">Work</a>
               </li>
-
-              <!-- <li class="gnbBtn">
-                <a id="contact" href="#">Contact</a>
-              </li> -->
             </ul>
           </nav>
         </div>
@@ -38,116 +36,133 @@
 
       <!-- 컨텐츠영역 (1600) -->
       <main>
-        <section class="sec0">
-          <div class="con">
-            <h2>About me</h2>
-          </div>
-        </section>
-
         <section class="sec1">
           <div class="con">
-            <!-- 인사말+사진 -->
-            <div class="sec1_top">
-              <div class="sec1_top_left">
-                <h3>안녕하세요! 웹디자이너 오오리입니다</h3>
-                <p>
-                  브랜드의 감성을 시각적으로 풀어내 소비자의 공감을 이끌고<br />
-                  다양한 경험을 바탕으로 브랜드와 소비자를 연결하는<br />
-                  디자인을 만드는 웹디자이너입니다.
-                </p>
+            <!-- 왼쪽 스티키 -->
+            <div class="sec1_sticky">
+              <div class="sticky_text">
+                <h3>About me</h3>
+                <p>현대어로 재해석된 부처의 말 인내심을 가져라.</p>
               </div>
-              <div class="sec1_top_right">
-                <img src="../img/aboutme/sec1/img1.jpg" alt="증명사진" />
-              </div>
+              <img src="../img/aboutme/sec1/cloud.svg" alt="cloud" />
             </div>
 
-            <div class="sec1_bottom">
-              <!-- 가장 왼쪽 학력+사회경험 -->
-              <div class="sec1_bottom_left">
-                <!-- 학력 -->
-                <div class="edu">
-                  <h3>학력</h3>
-                  <div class="detail">
-                    <h4>대림대학교 <span>졸업</span></h4>
-                    <p>2015.02 - 2018.02</p>
-                    <p>모바일인터넷과</p>
-                  </div>
-                  <div class="detail">
-                    <h4>안양고등학교 <span>졸업</span></h4>
-                    <p>2015.02</p>
-                  </div>
+            <div class="sec1_right">
+              <!-- 경력 -->
+              <div class="experience">
+                <div class="title">
+                  <h3>경력</h3>
+                  <img
+                    src="../img/aboutme/sec1/accordion_more.svg"
+                    alt="more"
+                    class="accordion_more"
+                  />
+                </div>
+                <div class="detail">
+                  <h4>(주)로로벨 디자인팀 <span>2024.04 - 2024.10</span></h4>
+                  <p>
+                    광고 이미지 제작, 이벤트 상세 페이지 제작, 모델 이미지 보정
+                    업무 담당
+                  </p>
                 </div>
 
-                <!-- 사회경험 -->
-                <div class="social">
-                  <h3>사회 경험</h3>
-                  <div class="detail">
-                    <h4>수상한사진관 <span>아르바이트</span></h4>
-                    <p>2016.02 - 2018. 03</p>
-                    <p>
-                      사진 촬영, 인물 보정, 배너 디자인,<br />
-                      매장 관리 업무 담당
-                    </p>
-                  </div>
+                <div class="detail">
+                  <h4>
+                    (주)카카오밴드 디자인팀 대리 <span>2020.07 - 2023.09</span>
+                  </h4>
+                  <p>
+                    상세페이지 제작, 배너 제작, 패키지 디자인, 사진 촬영 업무
+                    담당
+                  </p>
+                </div>
+
+                <div class="detail">
+                  <h4>
+                    (주)컴퍼니 디자인팀 주임 <span>2018.05 - 2019.11</span>
+                  </h4>
+                  <p>
+                    상세페이지 제작, 배너 제작, 사진 촬영, 자사몰 관리 업무 담당
+                  </p>
                 </div>
               </div>
 
-              <!-- 경력 -->
-              <div class="experience">
-                <h3>경력</h3>
-                <div class="detail">
-                  <h4>(주)로로벨 <span>디자인팀</span></h4>
-                  <p>2024.04 - 2024.10</p>
-                  <p>
-                    광고 이미지 제작, 이벤트 상세 페이지<br />
-                    제작, 모델 이미지 보정 업무 담당
-                  </p>
+              <!-- 사회경험 -->
+              <div class="social">
+                <div class="title">
+                  <h3>사회 경험</h3>
+                  <img
+                    src="../img/aboutme/sec1/accordion_more.svg"
+                    alt="more"
+                    class="accordion_more"
+                  />
                 </div>
 
                 <div class="detail">
-                  <h4>(주)카카오밴드 <span>디자인팀 대리</span></h4>
-                  <p>2020.07 - 2023.09</p>
-                  <p>
-                    상세페이지 제작, 배너 제작, 패키지<br />
-                    디자인, 사진 촬영 업무 담당
-                  </p>
+                  <h4>
+                    수상한사진관 아르바이트 <span>2024.04 - 2024.10</span>
+                  </h4>
+                  <p>사진 촬영, 인물 보정, 배너 디자인, 매장 관리 업무 담당</p>
+                </div>
+              </div>
+
+              <!-- 학력 -->
+              <div class="edu">
+                <div class="title">
+                  <h3>학력</h3>
+                  <img
+                    src="../img/aboutme/sec1/accordion_more.svg"
+                    alt="more"
+                    class="accordion_more"
+                  />
                 </div>
 
                 <div class="detail">
-                  <h4>(주)컴퍼니 <span>디자인팀 주임</span></h4>
-                  <p>2018.05 - 2019.11</p>
-                  <p>
-                    상세페이지 제작, 배너 제작, <br />사진 촬영, 자사몰 관리
-                    업무 담당
-                  </p>
+                  <h4>대림대학교 졸업<span>2015.02 - 2018.02</span></h4>
+                  <p>모바일인터넷과</p>
+                </div>
+                <div class="detail">
+                  <h4>안양고등학교 졸업<span>2015.02</span></h4>
                 </div>
               </div>
 
               <!-- 자격증 -->
               <div class="qualifications">
-                <h3>자격증</h3>
+                <div class="title">
+                  <h3>자격증</h3>
+                  <img
+                    src="../img/aboutme/sec1/accordion_more.svg"
+                    alt="more"
+                    class="accordion_more"
+                  />
+                </div>
+
                 <div class="detail">
-                  <h4>전자상거래운용사</h4>
-                  <p>2016.07</p>
+                  <h4>전자상거래운용사 <span>2016.07</span></h4>
                   <p>대한상공회의소</p>
                 </div>
 
                 <div class="detail">
-                  <h4>ICDL</h4>
-                  <p>2015.09</p>
+                  <h4>ICDL <span>2015.09</span></h4>
                   <p>한국생산성본부</p>
                 </div>
 
                 <div class="detail">
-                  <h4>2종보통운전면허</h4>
-                  <p>2015.02</p>
+                  <h4>2종보통운전면허 <span>2015.02</span></h4>
                   <p>경찰청</p>
                 </div>
               </div>
 
               <!-- 스킬 -->
               <div class="skill">
-                <h3>스킬</h3>
+                <div class="title">
+                  <h3>스킬</h3>
+                  <img
+                    src="../img/aboutme/sec1/accordion_more.svg"
+                    alt="more"
+                    class="accordion_more"
+                  />
+                </div>
+
                 <div class="detail">
                   <h4>포토샵</h4>
                   <div class="gauge_wrap">
@@ -248,43 +263,8 @@
           </div>
         </section>
 
-        <!-- sec2 -->
         <section class="sec2">
-          <div class="con">
-            <div class="view1">
-              <a href="#"
-                >Contact<img src="../img/aboutme/sec2/arrow.svg" alt="더보기"
-              /></a>
-              <div class="folder_text">
-                <div class="name">
-                  <p>이름</p>
-                  <h4>이름</h4>
-                </div>
-                <div class="phone">
-                  <p>전화번호</p>
-                  <h4>전화번호</h4>
-                </div>
-                <div class="email">
-                  <p>이메일</p>
-                  <h4>이메일</h4>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="view2">
-              <a href="#"
-                >배너, 광고 디자인<img
-                  src="../img/aboutme/sec2/arrow.svg"
-                  alt="더보기"
-              /></a>
-            </div>
-            <div class="view3">
-              <a href="#"
-                >인물, 제품 촬영<img
-                  src="../img/aboutme/sec2/arrow.svg"
-                  alt="더보기"
-              /></a>
-            </div> -->
-          </div>
+          <p>Contact me</p>
         </section>
       </main>
 
@@ -292,7 +272,7 @@
       <footer>
         <div class="con">
           <!-- 상단정보 -->
-          <!-- <div class="info_top">
+          <div class="info_top">
             <div class="name">
               <p>이름</p>
               <h4>박지은</h4>
@@ -305,7 +285,7 @@
               <p>이메일</p>
               <h4>p_n49@naver.com</h4>
             </div>
-          </div> -->
+          </div>
 
           <!-- 하단정보 -->
           <div class="info_bottom">
@@ -330,7 +310,7 @@
     </div>
 
     <!-- js -->
-    <script src="../js/aboutme.js"></script>
     <script src="../js/gnb.js"></script>
+    <script src="../js/aboutme.js"></script>
   </body>
 </html>
