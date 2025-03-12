@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url("./reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Archivo+Black&family=Noto+Sans+KR:wght@100..900&display=swap");
 
 /* 색상 정리 */
 :root {
@@ -12,7 +12,7 @@
 
 /* 드래그 했을때 색 지정 */
 ::selection {
-  background-color: var(--font-color);
+  background-color: var(--sub-color);
   color: #fff;
 }
 
@@ -53,6 +53,7 @@ header {
   left: 0;
   z-index: 999;
   font-family: "Archivo Black", sans-serif;
+  background-color: var(--bg-color);
 }
 h1 {
   font-size: 40px;
@@ -107,7 +108,6 @@ section {
 .sec1 {
   width: 100%;
   font-family: "Archivo Black", sans-serif;
-  /* background-color: burlywood; */
 }
 .sec1 .con {
   width: 100%;
@@ -123,21 +123,21 @@ section {
 }
 .main_visual_text h2 {
   width: fit-content;
-  font-size: 27vw;
-  letter-spacing: -40px;
+  font-size: 25vw;
+  letter-spacing: -30px;
 }
 .main_visual_text p {
   width: fit-content;
-  font-size: 10vw;
+  font-size: 14vw;
   margin-left: auto;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
 }
 .main_visual_text img {
   position: absolute;
-  /* width: 10%;
-  top: 17vw;
-  right: 27vh; */
-  top: 9vw;
-  right: 32vh;
+  width: 14vw;
+  top: 7.8vw;
+  right: 37vh;
   animation: hand 3s 0s infinite linear;
 }
 @keyframes hand {

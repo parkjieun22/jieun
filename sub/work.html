@@ -3,34 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jieun's Work</title>
-
+    <title>About Jieun</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../img/pavicon.png" type="image/x-icon" />
     <!-- css 연결 -->
     <link rel="stylesheet" href="../css/work.css" />
     <link rel="stylesheet" href="../css/work_responsive.css" />
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
         <div class="con">
+          <h1>
+            <a href="/">Jieun</a>
+          </h1>
           <!-- 메뉴 -->
           <nav id="gnb">
             <ul class="e">
               <li class="gnbBtn">
-                <a id="index" href="../index.html">Main</a>
-              </li>
-
-              <li class="gnbBtn">
-                <a id="about_me" href="./about_me.html">About me</a>
+                <a id="about_me" href="../sub/about_me.html">About me</a>
               </li>
 
               <li class="gnbBtn">
                 <a id="work" href="../sub/work.html">Work</a>
               </li>
-
-              <!-- <li class="gnbBtn">
-                <a id="contact" href="../sub/contact.html">Contact</a>
-              </li> -->
             </ul>
           </nav>
         </div>
@@ -58,69 +57,85 @@
 
             <!-- 상세페이지 -->
             <div class="content_wrap submenu1">
-              <div class="row_wrap">
-                <div class="detail_page1">
-                  <img
-                    src="../img/work/detail_page/detail-thumb1.jpg"
-                    alt="상세페이지1"
-                    data-src="../img/work/detail_page/detail1.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
-
-                <div class="detail_page2">
-                  <img
-                    src="../img/work/detail_page/detail-thumb2.jpg"
-                    alt="상세페이지2"
-                    data-src="../img/work/detail_page/detail2.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
-
-                <div class="detail_page3">
-                  <img
-                    src="../img/work/detail_page/detail-thumb3.jpg"
-                    alt="상세페이지3"
-                    data-src="../img/work/detail_page/detail3.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="detail_page1">
+                <img
+                  src="../img/work/detail_page/detail-thumb1.jpg"
+                  alt="상세페이지1"
+                  data-src="../img/work/detail_page/detail1.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
               </div>
 
-              <div class="row_wrap">
-                <div class="detail_page4">
-                  <img
-                    src="../img/work/detail_page/detail-thumb4.jpg"
-                    alt="상세페이지4"
-                    data-src="../img/work/detail_page/detail4.jpg"
-                    class="pic"
-                  />
+              <div class="detail_page2">
+                <img
+                  src="../img/work/detail_page/detail-thumb2.jpg"
+                  alt="상세페이지2"
+                  data-src="../img/work/detail_page/detail2.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
 
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="detail_page3">
+                <img
+                  src="../img/work/detail_page/detail-thumb3.jpg"
+                  alt="상세페이지3"
+                  data-src="../img/work/detail_page/detail3.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
 
-                <div class="detail_page5">
-                  <img
-                    src="../img/work/detail_page/detail-thumb5.jpg"
-                    alt="상세페이지5"
-                    data-src="../img/work/detail_page/detail5.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="detail_page4">
+                <img
+                  src="../img/work/detail_page/detail-thumb4.jpg"
+                  alt="상세페이지4"
+                  data-src="../img/work/detail_page/detail4.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
 
-                <div class="detail_page6">
-                  <img
-                    src="../img/work/detail_page/detail-thumb6.jpg"
-                    alt="상세페이지6"
-                    data-src="../img/work/detail_page/detail6.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="detail_page5">
+                <img
+                  src="../img/work/detail_page/detail-thumb5.jpg"
+                  alt="상세페이지5"
+                  data-src="../img/work/detail_page/detail5.jpg"
+                  class="pic"
+                />
+
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="detail_page6">
+                <img
+                  src="../img/work/detail_page/detail-thumb6.jpg"
+                  alt="상세페이지6"
+                  data-src="../img/work/detail_page/detail6.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="detail_page7">
+                <img
+                  src="../img/work/detail_page/detail-thumb7.jpg"
+                  alt="상세페이지7"
+                  data-src="../img/work/detail_page/detail7.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="detail_page8">
+                <img
+                  src="../img/work/detail_page/detail-thumb8.jpg"
+                  alt="상세페이지8"
+                  data-src="../img/work/detail_page/detail8.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
               </div>
             </div>
 
@@ -169,231 +184,249 @@
 
             <!-- 광고 -->
             <div class="content_wrap submenu3">
-              <div class="row_wrap">
-                <div class="ad1">
-                  <img
-                    src="../img/work/ad/ad1.jpg"
-                    alt="상세페이지1"
-                    data-src="../img/work/ad/ad1_mockup.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
-
-                <div class="ad2">
-                  <img
-                    src="../img/work/ad/ad2.jpg"
-                    alt="상세페이지2"
-                    data-src="../img/work/ad/ad2_mockup.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
-
-                <div class="ad3">
-                  <img
-                    src="../img/work/ad/ad3.jpg"
-                    alt="상세페이지3"
-                    data-src="../img/work/ad/ad3_mockup.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="ad1">
+                <img
+                  src="../img/work/ad/ad1.jpg"
+                  alt="상세페이지1"
+                  data-src="../img/work/ad/ad1_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
               </div>
 
-              <div class="row_wrap">
-                <div class="ad4">
-                  <img
-                    src="../img/work/ad/ad4.jpg"
-                    alt="상세페이지4"
-                    data-src="../img/work/ad/ad4_mockup.jpg"
-                    class="pic"
-                  />
+              <div class="ad2">
+                <img
+                  src="../img/work/ad/ad2.jpg"
+                  alt="상세페이지2"
+                  data-src="../img/work/ad/ad2_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
 
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="ad3">
+                <img
+                  src="../img/work/ad/ad3.jpg"
+                  alt="상세페이지3"
+                  data-src="../img/work/ad/ad3_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
 
-                <div class="ad5">
-                  <img
-                    src="../img/work/ad/ad5.jpg"
-                    alt="상세페이지5"
-                    data-src="../img/work/ad/ad5_mockup.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="ad4">
+                <img
+                  src="../img/work/ad/ad4.jpg"
+                  alt="상세페이지4"
+                  data-src="../img/work/ad/ad4_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
 
-                <div class="ad6">
-                  <img
-                    src="../img/work/ad/ad6.jpg"
-                    alt="상세페이지6"
-                    data-src="../img/work/ad/ad6_mockup.jpg"
-                    class="pic"
-                  />
-                  <p>겨울잠에서 깨어나는</p>
-                </div>
+              <div class="ad5">
+                <img
+                  src="../img/work/ad/ad5.jpg"
+                  alt="상세페이지5"
+                  data-src="../img/work/ad/ad5_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="ad6">
+                <img
+                  src="../img/work/ad/ad6.jpg"
+                  alt="상세페이지6"
+                  data-src="../img/work/ad/ad6_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="ad7">
+                <img
+                  src="../img/work/ad/ad7.jpg"
+                  alt="상세페이지7"
+                  data-src="../img/work/ad/ad7_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
+              </div>
+
+              <div class="ad8">
+                <img
+                  src="../img/work/ad/ad8.jpg"
+                  alt="상세페이지8"
+                  data-src="../img/work/ad/ad8_mockup.jpg"
+                  class="pic"
+                />
+                <p>겨울잠에서 깨어나는</p>
               </div>
             </div>
 
             <!-- 촬영 -->
             <div class="content_wrap submenu4">
-              <div class="row_wrap">
-                <div class="photo1">
-                  <img
-                    src="../img/work/photo/photo1.jpg"
-                    alt="촬영1"
-                    data-src="../img/work/photo/photo_detail1.jpg"
-                    class="pic"
-                  />
-                </div>
-
-                <div class="photo2">
-                  <img
-                    src="../img/work/photo/photo2.jpg"
-                    alt="촬영2"
-                    data-src="../img/work/photo/photo_detail2.jpg"
-                    class="pic"
-                  />
-                </div>
-
-                <div class="photo3">
-                  <img
-                    src="../img/work/photo/photo3.jpg"
-                    alt="촬영3"
-                    data-src="../img/work/photo/photo_detail3.jpg"
-                    class="pic"
-                  />
-                </div>
+              <div class="photo1">
+                <img
+                  src="../img/work/photo/photo1.jpg"
+                  alt="촬영1"
+                  data-src="../img/work/photo/photo_detail1.jpg"
+                  class="pic"
+                />
               </div>
 
-              <div class="row_wrap">
-                <div class="photo4">
-                  <img
-                    src="../img/work/photo/photo4.jpg"
-                    alt="촬영4"
-                    data-src="../img/work/photo/photo_detail4.jpg"
-                    class="pic"
-                  />
-                </div>
-
-                <div class="photo5">
-                  <img
-                    src="../img/work/photo/photo5.jpg"
-                    alt="촬영5"
-                    data-src="../img/work/photo/photo_detail5.jpg"
-                    class="pic"
-                  />
-                </div>
-
-                <div class="photo6">
-                  <img
-                    src="../img/work/photo/photo6.jpg"
-                    alt="촬영6"
-                    data-src="../img/work/photo/photo_detail6.jpg"
-                    class="pic"
-                  />
-                </div>
+              <div class="photo2">
+                <img
+                  src="../img/work/photo/photo2.jpg"
+                  alt="촬영2"
+                  data-src="../img/work/photo/photo_detail2.jpg"
+                  class="pic"
+                />
               </div>
 
-              <div class="row_wrap">
-                <div class="photo7">
-                  <img
-                    src="../img/work/photo/photo7.jpg"
-                    alt="촬영7"
-                    data-src="../img/work/photo/photo_detail7.jpg"
-                    class="pic"
-                  />
-                </div>
+              <div class="photo3">
+                <img
+                  src="../img/work/photo/photo3.jpg"
+                  alt="촬영3"
+                  data-src="../img/work/photo/photo_detail3.jpg"
+                  class="pic"
+                />
+              </div>
+              <div class="photo4">
+                <img
+                  src="../img/work/photo/photo4.jpg"
+                  alt="촬영4"
+                  data-src="../img/work/photo/photo_detail4.jpg"
+                  class="pic"
+                />
+              </div>
 
-                <div class="photo8">
-                  <img
-                    src="../img/work/photo/photo8.jpg"
-                    alt="촬영8"
-                    data-src="../img/work/photo/photo_detail8.jpg"
-                    class="pic"
-                  />
-                </div>
+              <div class="photo5">
+                <img
+                  src="../img/work/photo/photo5.jpg"
+                  alt="촬영5"
+                  data-src="../img/work/photo/photo_detail5.jpg"
+                  class="pic"
+                />
+              </div>
 
-                <div class="photo9">
-                  <img
-                    src="../img/work/photo/photo9.jpg"
-                    alt="촬영9"
-                    data-src="../img/work/photo/photo_detail9.jpg"
-                    class="pic"
-                  />
-                </div>
+              <div class="photo6">
+                <img
+                  src="../img/work/photo/photo6.jpg"
+                  alt="촬영6"
+                  data-src="../img/work/photo/photo_detail6.jpg"
+                  class="pic"
+                />
+              </div>
+
+              <div class="photo7">
+                <img
+                  src="../img/work/photo/photo7.jpg"
+                  alt="촬영7"
+                  data-src="../img/work/photo/photo_detail7.jpg"
+                  class="pic"
+                />
+              </div>
+
+              <div class="photo8">
+                <img
+                  src="../img/work/photo/photo8.jpg"
+                  alt="촬영8"
+                  data-src="../img/work/photo/photo_detail8.jpg"
+                  class="pic"
+                />
+              </div>
+
+              <div class="photo7">
+                <img
+                  src="../img/work/photo/photo7.jpg"
+                  alt="촬영7"
+                  data-src="../img/work/photo/photo_detail7.jpg"
+                  class="pic"
+                />
+              </div>
+
+              <div class="photo8">
+                <img
+                  src="../img/work/photo/photo8.jpg"
+                  alt="촬영8"
+                  data-src="../img/work/photo/photo_detail8.jpg"
+                  class="pic"
+                />
+              </div>
+
+              <div class="photo9">
+                <img
+                  src="../img/work/photo/photo9.jpg"
+                  alt="촬영9"
+                  data-src="../img/work/photo/photo_detail9.jpg"
+                  class="pic"
+                />
+              </div>
+              <div class="photo9">
+                <img
+                  src="../img/work/photo/photo9.jpg"
+                  alt="촬영9"
+                  data-src="../img/work/photo/photo_detail9.jpg"
+                  class="pic"
+                />
               </div>
             </div>
 
             <!-- 웹페이지 제작 -->
             <div class="content_wrap submenu5">
-              <div class="row_wrap">
-                <div class="webpage1">
-                  <a
-                    href="https://connect-rho-ochre.vercel.app/"
-                    target="_blank"
-                  >
-                    <img src="../img/work/webpage/webpage1.jpg" alt="connect" />
-                  </a>
-                  <a
-                    href="https://connect-rho-ochre.vercel.app/"
-                    target="_blank"
-                  >
-                    <span>겨울잠에서 깨어나는</span>
-                  </a>
-                </div>
-
-                <div class="webpage2">
-                  <a href="https://silver-kappa.vercel.app/" target="_blank">
-                    <img src="../img/work/webpage/webpage2.jpg" alt="silver" />
-                  </a>
-                  <a href="https://silver-kappa.vercel.app/" target="_blank">
-                    <span>겨울잠에서 깨어나는</span>
-                  </a>
-                </div>
-
-                <div class="webpage3">
-                  <a
-                    href="https://space-olive-sigma.vercel.app/"
-                    target="_blank"
-                  >
-                    <img src="../img/work/webpage/webpage3.jpg" alt="space" />
-                  </a>
-                  <a
-                    href="https://space-olive-sigma.vercel.app/"
-                    target="_blank"
-                  >
-                    <span>겨울잠에서 깨어나는</span>
-                  </a>
-                </div>
+              <div class="webpage1">
+                <a href="https://connect-rho-ochre.vercel.app/" target="_blank">
+                  <img src="../img/work/webpage/webpage1.jpg" alt="connect" />
+                </a>
+                <a href="https://connect-rho-ochre.vercel.app/" target="_blank">
+                  <span>겨울잠에서 깨어나는</span>
+                </a>
               </div>
 
-              <div class="row_wrap">
-                <div class="webpage4">
-                  <a href="https://plum.vercel.app/" target="_blank">
-                    <img src="../img/work/webpage/webpage4.jpg" alt="plum" />
-                  </a>
-                  <a href="https://plum.vercel.app/" target="_blank">
-                    <span>겨울잠에서 깨어나는</span>
-                  </a>
-                </div>
+              <div class="webpage2">
+                <a href="https://silver-kappa.vercel.app/" target="_blank">
+                  <img src="../img/work/webpage/webpage2.jpg" alt="silver" />
+                </a>
+                <a href="https://silver-kappa.vercel.app/" target="_blank">
+                  <span>겨울잠에서 깨어나는</span>
+                </a>
+              </div>
 
-                <div class="webpage5">
-                  <a href="https://gsapmo.vercel.app/" target="_blank">
-                    <img src="../img/work/webpage/webpage5.jpg" alt="gsapmo" />
-                  </a>
-                  <a href="https://gsapmo.vercel.app/" target="_blank">
-                    <span>겨울잠에서 깨어나는</span>
-                  </a>
-                </div>
+              <div class="webpage3">
+                <a href="https://space-olive-sigma.vercel.app/" target="_blank">
+                  <img src="../img/work/webpage/webpage3.jpg" alt="space" />
+                </a>
+                <a href="https://space-olive-sigma.vercel.app/" target="_blank">
+                  <span>겨울잠에서 깨어나는</span>
+                </a>
+              </div>
 
-                <div class="webpage6">
-                  <img
-                    src=""
-                    alt="영역차지용"
-                    onError="this.style.visibility='hidden'"
-                  />
-                </div>
+              <div class="webpage4">
+                <a href="https://plum.vercel.app/" target="_blank">
+                  <img src="../img/work/webpage/webpage4.jpg" alt="plum" />
+                </a>
+                <a href="https://plum.vercel.app/" target="_blank">
+                  <span>겨울잠에서 깨어나는</span>
+                </a>
+              </div>
+
+              <div class="webpage5">
+                <a href="https://gsapmo.vercel.app/" target="_blank">
+                  <img src="../img/work/webpage/webpage5.jpg" alt="gsapmo" />
+                </a>
+                <a href="https://gsapmo.vercel.app/" target="_blank">
+                  <span>겨울잠에서 깨어나는</span>
+                </a>
+              </div>
+
+              <div class="webpage6">
+                <img
+                  src=""
+                  alt="영역차지용"
+                  onError="this.style.visibility='hidden'"
+                />
               </div>
             </div>
           </div>
@@ -406,6 +439,10 @@
               id="light_box_img"
             />
           </div>
+        </section>
+
+        <section class="sec3">
+          <p>Contact me</p>
         </section>
       </main>
 

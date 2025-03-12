@@ -12,13 +12,13 @@ document.querySelectorAll(".accordion_more").forEach((btn) => {
 
 // -------------------------------------------------------------------------------
 
-// sec4 텍스트 움직임
+// sec2 텍스트 움직임
 gsap.set(".sec2 p", { x: -1000, opacity: 0 });
 
 gsap.to(".sec2 p", {
   scrollTrigger: {
     trigger: ".sec2",
-    start: "bottom 100%", // sec4가 화면에 나타날 때 실행
+    start: "bottom 100%", // sec2가 화면에 나타날 때 실행
     end: "bottom 100%",
     scrub: 3,
     // markers: true,
