@@ -2,6 +2,33 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* 색상 정리 */
+:root {
+  --main-color: #3d65aa;
+  --sub-color: #face64;
+  --bg-color: #fdfbf5;
+  --font-color: #000;
+  --point-color: #e64e40;
+}
+
+/* 드래그 했을때 색 지정 */
+::selection {
+  background-color: var(--sub-color);
+  color: #fff;
+}
+
+/* 스크롤모양 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: var(--main-color);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
 
 html,
 body,

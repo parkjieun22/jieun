@@ -2,34 +2,6 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Archivo+Black&family=Noto+Sans+KR:wght@100..900&display=swap");
 
-/* 색상 정리 */
-:root {
-  --main-color: #3d65aa;
-  --sub-color: #face64;
-  --bg-color: #fffbf0;
-  --font-color: #000;
-  --point-color: #e64e40;
-}
-
-/* 드래그 했을때 색 지정 */
-::selection {
-  background-color: var(--sub-color);
-  color: #fff;
-}
-
-/* 스크롤모양 */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  width: 8px;
-  background-color: var(--main-color);
-  border-radius: 50px;
-}
-::-webkit-scrollbar-track {
-  background-color: #000;
-}
-
 body {
   font-family: "Noto Sans KR", sans-serif;
   color: var(--font-color);
@@ -92,8 +64,6 @@ header > .con {
 }
 #gnb > ul > li.active > a {
   color: var(--main-color);
-  text-shadow: -1px 0px var(--bg-color), 0px 1px var(--bg-color),
-    1px 0px var(--bg-color), 0px -1px var(--bg-color);
 }
 main {
   width: 100%;
@@ -142,7 +112,8 @@ section {
   margin-bottom: 50px;
 }
 .sec1 h2 {
-  font-family: "Abhaya Libre", serif;
+  font-family: "Archivo Black", sans-serif;
+  /* font-family: "Abhaya Libre", serif; */
   color: var(--point-color);
   font-weight: 800;
 }
@@ -209,16 +180,46 @@ section {
 }
 .content_wrap p {
   font-size: 16px;
+  font-weight: 500;
 }
-.content_wrap > div img {
-  filter: blur(0);
-  transition: filter 0.3s ease;
+
+/* 썸네일 이미지 설정 */
+.img_wrap {
+  overflow: hidden;
+  width: 385px;
+  height: 385px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.content_wrap > div:hover img:not(:hover) {
-  filter: blur(10px);
+.banner_img_wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.content_wrap > div img:hover {
-  filter: blur(0);
+.img_wrap img,
+.banner_img_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(100%);
+  transition: 0.3s ease;
+}
+.img_wrap img:hover,
+.banner_img_wrap img {
+  filter: brightness(100%);
+  transform: scale(1.01);
+  cursor: url("../img/cursor.png") 2 2, auto;
+}
+.content_wrap:has(> div img:hover) .img_wrap:not(:hover) img,
+.content_wrap:has(> div img:hover) .banner_img_wrap:not(:hover) img {
+  filter: brightness(80%);
 }
 
 /* 상세페이지 submenu1, 광고 submenu3, 촬영 submenu4 */
@@ -237,13 +238,13 @@ section {
 .submenu2 p,
 .submenu3 p,
 .submenu5 span {
-  padding: 10px 20px 0 20px;
+  padding: 10px 10px 0 10px;
   box-sizing: border-box;
   color: #555555;
   cursor: pointer;
   display: block;
 }
-.submenu1 img,
+/* .submenu1 img,
 .submenu3 img,
 .submenu4 img,
 .submenu5 img {
@@ -254,7 +255,7 @@ section {
   overflow: hidden;
   object-fit: cover;
   cursor: pointer;
-}
+} */
 /* ================= 끝 ================= */
 
 /*  배너 submenu2 */
@@ -264,14 +265,7 @@ section {
   gap: 60px;
   margin-bottom: 200px;
 }
-.submenu2 img {
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  cursor: pointer;
-}
+
 /* ================= 배너 submenu2  끝 ================= */
 
 /* sec3 */

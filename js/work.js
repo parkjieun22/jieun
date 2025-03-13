@@ -7,7 +7,6 @@ let lightBoxImg = document.getElementById("light_box_img"); // 라이트박스 �
 for (let i = 0; i < pic.length; i++) {
   pic[i].addEventListener("click", showLightBox);
 }
-
 // 썸네일을 클릭하면 실행할 이벤트
 function showLightBox() {
   let bigLocation = this.getAttribute("data-src"); // 썸네일 이미지에 해당하는 큰 이미지 경로를 가져옴
@@ -18,17 +17,22 @@ function showLightBox() {
   // display:none 해둔 라이트박스를 다시 보여주기
   lightBox.style.display = "flex";
 }
-
 // 라이트박스 다시 감추기
 lightBox.onclick = function () {
   lightBox.style.display = "none";
 };
+
+// --------------------------------------------------------------------
 
 /* ========= 서브메뉴 클릭시 각 내용변경 ========= */
 document.addEventListener("DOMContentLoaded", function () {
   // 모든 content_wrap 숨기기
   let allContent = document.querySelectorAll(".content_wrap");
   allContent.forEach((content) => (content.style.display = "none"));
+
+  // 기본으로 #detail을 active 상태로 설정
+  let defaultMenu = document.querySelector("#detail");
+  defaultMenu.classList.add("active");
 
   // 각 메뉴 버튼에 클릭 이벤트 추가
   document.querySelectorAll(".submenu a").forEach((chip, index) => {

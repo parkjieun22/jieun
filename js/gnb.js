@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll("#gnb > ul > li > a");
   const logo = document.querySelector("h1 a"); // 로고의 a 태그 선택
+  const moreButton = document.querySelector(".more a"); // "작업 더 보기" 버튼
 
   // 기존에 저장된 active 메뉴가 있으면 불러오기
   const savedActive = localStorage.getItem("activeMenu");
@@ -22,12 +23,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 로고 클릭 시 active 상태 초기화
+  // 작업 더 보기 버튼 클릭 시 Work 메뉴 활성화
+  if (moreButton) {
+    moreButton.addEventListener("click", () => {
+      localStorage.setItem("activeMenu", "work"); // Work 메뉴 활성화
+    });
+  }
+
+  // 로고 클릭 시 active 상태 초기화 + 글자 색 변경
   if (logo) {
-    logo.addEventListener("click", function () {
-      // 로고 클릭 시 active 상태 초기화
-      menuItems.forEach((el) => el.parentElement.classList.remove("active"));
-      localStorage.removeItem("activeMenu"); // 로컬스토리지에서 activeMenu 삭제
+    logo.addEventListener("click", function (e) {
+      e.preventDefault(); // 기본 이동 방지
+      menuItems.forEach((el) => el.parentElement.classList.remove("active")); // active 제거
+      localStorage.removeItem("activeMenu");
+
+      menuItems.forEach((el) => {
+        el.style.color = "black";
+      });
+      location.href = "/"; // 메인 페이지로 이동
     });
   }
 });
