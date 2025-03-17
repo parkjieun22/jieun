@@ -89,6 +89,7 @@ section {
 }
 .sec1_sticky {
   position: sticky;
+  width: fit-content;
   height: fit-content;
   top: 150px;
   align-self: flex-start;

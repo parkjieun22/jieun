@@ -100,6 +100,8 @@ section {
   display: block;
   position: absolute;
   top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -121,7 +123,6 @@ section {
 }
 .sec1 h2 {
   font-family: "Archivo Black", sans-serif;
-  /* font-family: "Abhaya Libre", serif; */
   color: var(--point-color);
   font-weight: 800;
 }
@@ -165,6 +166,10 @@ section {
 }
 
 /* sec2 */
+.detail_page9,
+.ad9 {
+  display: none;
+}
 .submenu {
   margin-bottom: 50px;
   font-size: 20px;
@@ -186,7 +191,8 @@ section {
 .content_wrap > div {
   margin-bottom: 20px;
 }
-.content_wrap p {
+.content_wrap p,
+.submenu5 span {
   font-size: 16px;
   font-weight: 500;
 }
@@ -196,7 +202,7 @@ section {
   overflow: hidden;
   width: 385px;
   height: 385px;
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -206,7 +212,7 @@ section {
   width: 100%;
   height: 100%;
   max-height: 320px;
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -240,6 +246,7 @@ section {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 180px;
+  justify-content: center;
 }
 
 .submenu1 p,
@@ -274,6 +281,12 @@ section {
   margin-bottom: 200px;
 }
 
+/* 영역차지 설정 */
+.webpage6 .img_wrap,
+.webpage7 .img_wrap,
+.webpage8 .img_wrap {
+  cursor: default;
+}
 /* ================= 배너 submenu2  끝 ================= */
 
 /* sec3 */

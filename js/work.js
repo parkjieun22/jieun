@@ -83,19 +83,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // --------------------------------------------------------------------
 
-// sec3 텍스트 움직임
-gsap.set(".sec3 p", { x: -1000, opacity: 0 });
+let breakpoint = gsap.matchMedia();
+breakpoint.add("(min-width: 769px)", () => {
+  // sec3 텍스트 움직임
+  gsap.set(".sec3 p", { x: -1000, opacity: 0 });
 
-gsap.to(".sec3 p", {
-  scrollTrigger: {
-    trigger: ".sec3",
-    start: "bottom 100%", // sec3가 화면에 나타날 때 실행
-    end: "bottom 100%",
-    scrub: 3,
-    // markers: true,
-  },
-  x: 0,
-  opacity: 1,
-  duration: 3,
-  ease: "elastic",
+  gsap.to(".sec3 p", {
+    scrollTrigger: {
+      trigger: ".sec3",
+      start: "bottom 100%", // sec3가 화면에 나타날 때 실행
+      end: "bottom 100%",
+      scrub: 3,
+      // markers: true,
+    },
+    x: 0,
+    opacity: 1,
+    duration: 3,
+    ease: "elastic",
+  });
 });

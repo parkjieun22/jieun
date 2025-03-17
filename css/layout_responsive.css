@@ -7,135 +7,135 @@
     margin: 0 auto;
   }
 
+  /* 헤더 */
+  header > .con {
+    width: 90%;
+  }
+
+  /* sec1 */
+  .main_visual_text {
+    width: 100%;
+  }
+  .scroll {
+    margin-top: 200px;
+  }
+
   /* sec2 */
-  .sec2_leftBox {
-    width: 40%;
-    height: 100%;
+  .img_box1 a {
+    width: 500px;
+    height: 800px;
   }
-  .right_area {
-    width: 58%;
-    height: 100%;
+  .img_box3 a {
+    width: 600px;
+    height: 300px;
   }
-  .right_area_bottom {
-    gap: 30px;
+  .img_box4 a:first-of-type {
+    width: 700px;
+    height: 400px;
+  }
+  .img_box4_wrap a:last-of-type {
+    width: 320px;
+    height: 400px;
+  }
+  .img_box5 a {
+    width: 700px;
+    height: 500px;
+  }
+  .more a {
+    top: 412vh;
+  }
+  .more_img_wrap {
+    top: 412vh;
   }
 
   /* sec3 */
-  .sticky_text {
-    width: 500px;
+  .sec3 {
+    height: 280vh;
   }
-  .sec3 .images {
-    width: 700px;
-  }
-  .img1 {
-    height: 280px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    height: 280px;
+
+  /* sec4 */
+  .sec4 p {
+    width: 90%;
   }
 }
 
 /* 중간사이즈 노트북, 큰 사이즈 테블릿 */
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
-  /* .con 컨텐츠 공통 영역 */
   .con {
     width: 90%;
     height: auto;
     margin: 0 auto;
   }
 
+  /* 헤더 */
+  header > .con {
+    width: 90%;
+  }
+
+  /* sec1 */
+  .sec1 .con {
+    height: auto;
+  }
+  .main_visual_text {
+    width: 100%;
+  }
+  .main_visual_text h2 {
+    letter-spacing: -20px;
+  }
+  .scroll {
+    margin-top: 100px;
+  }
+
   /* sec2 */
-  .sec2 {
+  .img_box1 a {
+    width: 400px;
+    height: 600px;
+  }
+  .img_box2 a {
+    width: 400px;
+    height: 400px;
+  }
+  .img_box3 {
+    top: 65vh;
+  }
+  .img_box3 a {
+    width: 600px;
+    height: 300px;
+  }
+  .img_box4 {
+    top: 105vh;
+  }
+  .img_box4 a:first-of-type {
+    width: 500px;
+    height: 300px;
+  }
+  .img_box4_wrap a:last-of-type {
+    width: 320px;
+    height: 300px;
+  }
+  .img_box5 {
+    top: 146vh;
+  }
+  .img_box5 a {
+    width: 600px;
     height: 500px;
   }
-  .sec2_leftBox {
-    width: 40%;
-    height: 100%;
+
+  .more a {
+    top: 330vh;
   }
-  .right_area {
-    width: 58%;
-    height: 100%;
-  }
-  .right_area_bottom {
-    height: 220px;
-    gap: 20px;
-  }
-  .sec2 .top_text h3 {
-    font-size: 24px;
-  }
-  .sec2 .text_box h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .sec2 .text_box p,
-  .experience_year > p {
-    font-size: 16px;
-  }
-  .sec2 .top_text img {
-    width: 24px;
-  }
-  .sec2 .text_box p br {
-    display: none;
-  }
-  .skills p,
-  .experience > p {
-    font-size: 20px;
-  }
-  .skills_logo img {
-    width: 4vw;
-    height: 100%;
-  }
-  .skills_logo div {
-    width: 100%;
-    margin-left: auto;
-  }
-  .skills_logo {
-    width: fit-content;
+  .more_img_wrap {
+    top: 330vh;
   }
 
   /* sec3 */
   .sec3 {
-    padding: 160px 0 160px 0;
+    height: 220vh;
   }
-  .sec3 .img1,
-  .sec3 .img2,
-  .sec3 .img3,
-  .sec3 .img4,
-  .sec3 .img5 {
-    border-radius: 20px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    gap: 8px;
-  }
-  .sec3 .images {
-    width: 500px;
-    gap: 8px;
-  }
-  .sticky_text {
-    width: 340px;
-  }
-  .img1 {
-    height: 200px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    height: 200px;
-  }
-  .sticky_text h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  .sticky_text p {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  .sticky_text span {
-    font-size: 14px;
-  }
-  .sticky_text img {
-    width: 16px;
+
+  /* sec4 */
+  .sec4 p {
+    width: 90%;
   }
 
   /* 푸터 */
@@ -149,104 +149,115 @@
 
 /* 테블릿 중간~소 사이즈 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* .con 컨텐츠 공통 영역 */
   .con {
     width: 90%;
     height: auto;
     margin: 0 auto;
   }
 
-  /* sec2 */
-  .sec2 {
-    height: 500px;
+  /* 헤더 */
+  header > .con {
+    width: 90%;
   }
-  .sec2_leftBox {
-    width: 40%;
-    height: 100%;
+
+  /* sec1 */
+  .sec1 .con {
+    height: auto;
   }
-  .right_area {
-    width: 58%;
-    height: 100%;
+  .hello_hand {
+    gap: 10px;
   }
-  .right_area_bottom {
-    height: 220px;
-    gap: 20px;
+  .main_visual_text {
+    width: 100%;
   }
-  .sec2 .top_text h3 {
-    font-size: 24px;
+  .main_visual_text h2 {
+    letter-spacing: -10px;
   }
-  .sec2 .text_box h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .sec2 .text_box p,
-  .experience_year > p {
-    font-size: 16px;
-  }
-  .sec2 .top_text img {
-    width: 24px;
-  }
-  .sec2 .text_box p br {
+  .scroll {
     display: none;
   }
-  .skills p,
-  .experience > p {
-    font-size: 20px;
+
+  /* sec2 */
+  .sec2 {
+    padding: 100px 0;
   }
-  .skills_logo img {
-    width: 4vw;
+  .sec2 > .con {
+    margin-bottom: 40px;
+  }
+  .sec2 > .con h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-weight: 500;
+  }
+  .sec2 > .con p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .img_box1 a {
+    width: 300px;
+    height: 500px;
+  }
+  .img_box2 a {
+    width: 300px;
+    height: 300px;
+  }
+  .img_box3 {
+    top: 58vh;
+  }
+  .img_box3 a {
+    width: 500px;
+    height: 240px;
+  }
+  .img_box4 {
+    top: 93vh;
+  }
+  .img_box4 a:first-of-type {
+    width: 340px;
+    height: 280px;
+  }
+  .img_box4_wrap a:last-of-type {
+    width: 280px;
+    height: 280px;
+  }
+  .img_box5 {
+    top: 132vh;
+  }
+  .img_box5 a {
+    width: 400px;
+    height: 300px;
+  }
+
+  .more a {
+    top: 250vh;
+    font-size: 20px;
+    padding: 12px 32px;
+    border: 1px solid #000;
+  }
+  .more_img_wrap {
+    top: 250vh;
+  }
+  .more_img_wrap .image4,
+  .more_img_wrap .image2 {
+    width: 40px;
     height: 100%;
   }
-  .skills_logo div {
-    width: 100%;
-    margin-left: auto;
-  }
-  .skills_logo {
-    width: fit-content;
+  .more_img_wrap .image1,
+  .more_img_wrap .image3,
+  .more_img_wrap .image5 {
+    width: 20px;
+    height: 100%;
   }
 
   /* sec3 */
   .sec3 {
-    padding: 160px 0 160px 0;
+    height: 190vh;
   }
-  .sec3 .img1,
-  .sec3 .img2,
-  .sec3 .img3,
-  .sec3 .img4,
-  .sec3 .img5 {
-    border-radius: 20px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    gap: 8px;
-  }
-  .sec3 .images {
-    width: 420px;
-    gap: 8px;
-  }
-  .sticky_text {
-    width: 300px;
-  }
-  .img1 {
-    height: 200px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    height: 200px;
-  }
-  .sticky_text h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  .sticky_text p {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  .sticky_text span {
-    font-size: 14px;
-  }
-  .sticky_text img {
-    width: 16px;
+
+  /* sec4 */
+  .sec4 p {
+    width: 90%;
   }
 
   /* 푸터 */
@@ -255,142 +266,29 @@
   .info_bottom span,
   .info_bottom p {
     font-size: 16px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 880px) {
-  /* sec1 */
-  .sec1 {
-    margin-bottom: 60px;
-  }
-
-  /* sec2 */
-  .sec2 {
-    height: auto;
-  }
-  .sec2 > .con {
-    flex-direction: column;
-  }
-  .sec2 .top_text {
-    margin: 40px 0 10px 0;
-  }
-  .sec2_leftBox {
-    width: 100%;
-    height: 300px;
-  }
-  .right_area {
-    width: 100%;
-    height: 100%;
-  }
-  .right_area_bottom {
-    height: auto;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .sec2 .text_box {
-    margin-bottom: 10px;
-  }
-  .sec2 .top_text h3 {
-    font-size: 24px;
-  }
-  .sec2 .text_box h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .sec2 .text_box p,
-  .experience_year > p {
-    font-size: 16px;
-  }
-  .sec2 .top_text img {
-    width: 24px;
-  }
-  .sec2 .text_box p br {
-    display: none;
-  }
-  .skills p,
-  .experience > p {
-    font-size: 20px;
-  }
-  .skills_logo img {
-    width: 8vw;
-    height: 100%;
-  }
-  .skills_logo div {
-    width: 100%;
-    margin-left: auto;
-  }
-  .skills_logo {
-    width: fit-content;
-  }
-
-  /* sec3 */
-  .sec3 {
-    padding: 60px 0;
-  }
-  .sec3 .con {
-    flex-direction: column;
-  }
-  .sticky_text {
-    width: 100%;
-    margin-bottom: 10px;
-    position: static;
-  }
-
-  /* sec3 이미지 영역 설정 */
-  .sec3 .images {
-    width: 100%;
-  }
-  .sec3 .img1,
-  .sec3 .img2,
-  .sec3 .img3,
-  .sec3 .img4,
-  .sec3 .img5 {
-    border-radius: 20px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    gap: 8px;
-  }
-  .sec3 .images {
-    width: 100%;
-    gap: 8px;
-  }
-  .img1 {
-    height: 200px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    height: 200px;
-  }
-  .sticky_text h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  .sticky_text p {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  .sticky_text span {
-    font-size: 14px;
-  }
-  .sticky_text img {
-    width: 16px;
   }
 }
 
 /* 모바일 */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* 헤더 */
-  #gnb > ul > li > a {
-    font-size: 14px;
+  header > .con {
+    width: 90%;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  #gnb {
+    font-size: 20px;
   }
   #gnb > ul > li {
-    padding: 8px;
+    padding: 0px;
   }
   #gnb > ul {
-    padding: 6px 20px;
+    padding: 0px;
   }
   #gnb > ul > li > a {
-    padding: 8px 20px;
+    padding: 0px;
   }
 
   /* .con 컨텐츠 공통 영역 */
@@ -401,121 +299,114 @@
   }
 
   /* sec1 */
+  .sec1 .con {
+    height: fit-content;
+  }
+  .main_visual_text {
+    width: 100%;
+  }
   .sec1 {
     margin-bottom: 60px;
+  }
+  .main_visual_text h2 {
+    letter-spacing: -6px;
+    margin: 20px 0;
+  }
+  .hello_hand {
+    gap: 6px;
+  }
+  .scroll {
+    display: none;
   }
 
   /* sec2 */
   .sec2 {
-    height: auto;
+    padding: 50px 0;
   }
   .sec2 > .con {
-    flex-direction: column;
+    margin-bottom: 40px;
   }
-  .sec2 .top_text {
-    margin: 40px 0 10px 0;
-  }
-  .sec2_leftBox {
-    width: 100%;
-    height: 300px;
-  }
-  .right_area {
-    width: 100%;
-    height: 100%;
-  }
-  .right_area_bottom {
-    height: auto;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .sec2 .text_box {
-    margin-bottom: 10px;
-  }
-  .sec2 .top_text h3 {
-    font-size: 24px;
-  }
-  .sec2 .text_box h4 {
-    font-size: 20px;
+  .sec2 > .con h3 {
+    font-size: 22px;
     margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-weight: 500;
   }
-  .sec2 .text_box p,
-  .experience_year > p {
+  .sec2 > .con p {
     font-size: 16px;
-  }
-  .sec2 .top_text img {
-    width: 24px;
-  }
-  .sec2 .text_box p br {
-    display: none;
-  }
-  .skills p,
-  .experience > p {
-    font-size: 20px;
-  }
-  .skills_logo img {
-    width: 8vw;
-    height: 100%;
-  }
-  .skills_logo div {
-    width: 100%;
-    margin-left: auto;
-  }
-  .skills_logo {
-    width: fit-content;
+    line-height: 1.5;
   }
 
   /* sec3 */
   .sec3 {
-    padding: 60px 0;
+    height: fit-content;
+    padding-bottom: 100px;
   }
-  .sec3 .con {
-    flex-direction: column;
-  }
-  .sticky_text {
-    width: 100%;
-    margin-bottom: 10px;
+  .sec3 .con,
+  .img_box1,
+  .img_box2,
+  .img_box3,
+  .img_box4,
+  .img_box5 {
     position: static;
   }
+  .img_box1 a {
+    width: 100%;
+    height: 500px;
+  }
+  .img_box2 a {
+    width: 100%;
+    height: 300px;
+  }
+  .img_box3 a {
+    width: 100%;
+    height: 240px;
+  }
+  .img_box4 a:first-of-type {
+    width: 100%;
+    height: 280px;
+  }
+  .img_box4_wrap a:last-of-type {
+    display: none;
+  }
+  .img_box5 a {
+    width: 100%;
+    height: 200px;
+  }
+  .img_box5 {
+    transform: translateX(0);
+  }
+  .sec3 .con > div:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
 
-  /* sec3 이미지 영역 설정 */
-  .sec3 .images {
-    width: 100%;
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
   }
-  .sec3 .img1,
-  .sec3 .img2,
-  .sec3 .img3,
-  .sec3 .img4,
-  .sec3 .img5 {
-    border-radius: 20px;
+  .more_img_wrap {
+    position: static;
+    transform: translateX(0);
   }
-  .img_wrap1,
-  .img_wrap2 {
-    gap: 8px;
-  }
-  .sec3 .images {
-    width: 100%;
-    gap: 8px;
-  }
-  .img1 {
-    height: 200px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    height: 200px;
-  }
-  .sticky_text h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  .sticky_text p {
+  .more a {
+    position: static;
     font-size: 16px;
-    margin-bottom: 30px;
+    padding: 10px 24px;
+    border: 1px solid #000;
+    transform: translateX(0);
   }
-  .sticky_text span {
-    font-size: 14px;
+  .more_img_wrap {
+    display: none;
   }
-  .sticky_text img {
-    width: 16px;
+
+  /* sec4 */
+  .sec4 {
+    height: 80px;
+  }
+  .sec4 p {
+    width: 90%;
+    font-size: 24px;
   }
 
   /* 푸터 */
@@ -538,177 +429,164 @@
     gap: 20px;
     text-align: center;
     margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 585px) {
-  /* 헤더 */
-  #gnb > ul > li > a {
-    font-size: 14px;
-  }
-  #gnb > ul > li {
-    padding: 10px;
-  }
-  #gnb > ul {
-    padding: 6px 30px;
-    gap: 1px;
-  }
-  #gnb > ul > li > a {
-    padding: 6px 10px;
   }
 }
 
 /* 작은 모바일 */
 @media screen and (max-width: 480px) {
   /* 헤더 */
-  #gnb > ul > li > a {
-    font-size: 14px;
+  header > .con {
+    width: 90%;
+  }
+  header {
+    height: 80px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  #gnb {
+    font-size: 16px;
   }
   #gnb > ul > li {
-    padding: 10px;
+    padding: 0px;
   }
   #gnb > ul {
-    padding: 6px 30px;
-    gap: 1px;
+    padding: 0px;
+    gap: 20px;
   }
   #gnb > ul > li > a {
-    padding: 6px 10px;
+    padding: 0px;
   }
 
   /* .con 컨텐츠 공통 영역 */
   .con {
-    width: 90%;
+    width: 96%;
     height: auto;
     margin: 0 auto;
   }
 
   /* sec1 */
+  .sec1 .con {
+    height: fit-content;
+  }
+  .main_visual_text {
+    width: 100%;
+  }
   .sec1 {
     margin-bottom: 60px;
   }
-  .sec1 .con {
-    height: 400px;
+  .main_visual_text h2 {
+    letter-spacing: -6px;
+    margin: 20px 0;
+  }
+  .hello_hand {
+    gap: 6px;
+  }
+  .scroll {
+    display: none;
   }
 
   /* sec2 */
   .sec2 {
-    height: auto;
+    padding: 20px 0;
   }
   .sec2 > .con {
-    flex-direction: column;
+    margin-bottom: 40px;
   }
-  .sec2 .top_text {
-    margin: 30px 0 10px 0;
-  }
-  .sec2_leftBox {
-    width: 100%;
-    height: 200px;
-  }
-  .right_area {
-    width: 100%;
-    height: 100%;
-  }
-  .right_area_bottom {
-    height: auto;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .sec2 .text_box {
-    margin-bottom: 10px;
-  }
-  .sec2 .top_text h3 {
-    font-size: 24px;
-  }
-  .sec2 .text_box h4 {
-    font-size: 20px;
+  .sec2 > .con h3 {
+    font-size: 18px;
     margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-weight: 500;
   }
-  .sec2 .text_box p,
-  .experience_year > p {
-    font-size: 16px;
+  .sec2 > .con p {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
   }
-  .sec2 .top_text img {
-    width: 24px;
-  }
-  .sec2 .text_box p br {
+  .sec2 > .con p br {
     display: none;
-  }
-  .skills p,
-  .experience > p {
-    font-size: 20px;
-  }
-  .skills_logo img {
-    width: 10vw;
-    height: 100%;
-  }
-  .skills_logo div {
-    width: 100%;
-    margin-left: auto;
-  }
-  .skills_logo {
-    width: fit-content;
-  }
-  .experience_year,
-  .skills_logo {
-    margin-top: 20px;
-  }
-  .experience,
-  .skills {
-    padding: 30px 40px;
   }
 
   /* sec3 */
   .sec3 {
-    padding: 60px 0;
+    height: fit-content;
+    padding-bottom: 100px;
   }
-  .sec3 .con {
-    flex-direction: column;
-  }
-  .sticky_text {
-    width: 100%;
-    margin-bottom: 20px;
-    position: static;
-  }
-
-  /* sec3 이미지 영역 설정 */
-  .sec3 .images {
-    width: 100%;
-  }
-  .sec3 .img1,
-  .sec3 .img2,
-  .sec3 .img3,
-  .sec3 .img4,
-  .sec3 .img5 {
-    border-radius: 20px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    gap: 8px;
-  }
-  .sec3 .images {
-    width: 100%;
-    gap: 8px;
-  }
-  .img1 {
-    height: 200px;
-  }
-  .img_wrap1,
-  .img_wrap2 {
-    height: 200px;
-  }
-  .sticky_text h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  .sticky_text p {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  .sticky_text span {
+  .sec3 span {
     font-size: 14px;
   }
-  .sticky_text img {
-    width: 16px;
+  .sec3 .con,
+  .img_box1,
+  .img_box2,
+  .img_box3,
+  .img_box4,
+  .img_box5 {
+    position: static;
+  }
+  .img_box1 a {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2px;
+  }
+  .img_box2 a {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2px;
+  }
+  .img_box3 a {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2px;
+  }
+  .img_box4 a:first-of-type {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 2px;
+  }
+  .img_box4_wrap a:last-of-type {
+    display: none;
+  }
+  .img_box5 a {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2px;
+  }
+  .img_box5 {
+    transform: translateX(0);
+  }
+  .sec3 .con > div:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .more_img_wrap {
+    position: static;
+    transform: translateX(0);
+  }
+  .more a {
+    position: static;
+    font-size: 16px;
+    padding: 10px 24px;
+    border: 1px solid #000;
+    transform: translateX(0);
+  }
+  .more_img_wrap {
+    display: none;
+  }
+
+  /* sec4 */
+  .sec4 {
+    height: 60px;
+  }
+  .sec4 p {
+    width: 90%;
+    font-size: 20px;
   }
 
   /* 푸터 */
@@ -731,22 +609,5 @@
     gap: 20px;
     text-align: center;
     margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  /* 헤더 */
-  #gnb > ul > li > a {
-    font-size: 12px;
-  }
-  #gnb > ul > li {
-    padding: 4px;
-  }
-  #gnb > ul {
-    padding: 6px 10px;
-    gap: 1px;
-  }
-  #gnb > ul > li > a {
-    padding: 6px;
   }
 }
