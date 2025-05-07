@@ -1,3 +1,10 @@
+/* 공통설정 */
+@media screen and (min-width: 481px) and (max-width: 1600px) {
+  .submenu4 .photo9 {
+    display: block;
+  }
+}
+
 /* 노트북 */
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
   /* .con 컨텐츠 공통 영역 */
@@ -247,16 +254,11 @@
     gap: 10px;
     margin-bottom: 100px;
   }
-  .content_wrap p,
-  .submenu5 span {
-    font-size: 14px;
-    font-weight: 500;
-  }
   .submenu1 p,
   .submenu2 p,
   .submenu3 p,
   .submenu5 span {
-    padding: 4px 4px 0 4px;
+    display: none;
   }
   .img_wrap {
     width: 28vw;
@@ -372,7 +374,7 @@
   .submenu3,
   .submenu4,
   .submenu5 {
-    gap: 10px;
+    /* gap: 10px; */
     margin-bottom: 60px;
   }
   .content_wrap > div {
