@@ -216,6 +216,7 @@ section {
   height: 620px;
   object-fit: cover;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .img_box4 img,
@@ -224,6 +225,7 @@ section {
   height: 620px;
   object-fit: cover;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 /* .more a {
