@@ -213,10 +213,11 @@ section {
 .img_box2 img,
 .img_box3 img {
   width: 520px;
-  height: 620px;
+  height: 400px;
   object-fit: cover;
   transition: 0.3s;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .img_box4 img,
