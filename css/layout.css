@@ -191,7 +191,7 @@ section {
 /* 메인 3번째 섹션 */
 .sec3 {
   box-sizing: border-box;
-  height: 290vh;
+  margin-bottom: 200px;
 }
 .sec3 .con {
   position: relative;
@@ -200,101 +200,33 @@ section {
   height: auto;
 }
 
+.sec3_top,
+.sec3_bottom {
+  display: flex;
+  gap: 20px;
+}
+.sec3_bottom {
+  margin-top: 20px;
+}
+
 .img_box1 img,
 .img_box2 img,
-.img_box3 img,
-.img_box4 img,
-.img_box5 img {
-  width: 100%;
-  height: 100%;
+.img_box3 img {
+  width: 520px;
+  height: 620px;
   object-fit: cover;
   transition: 0.3s;
 }
 
-.img_box1 a {
-  display: block;
-  overflow: hidden;
-  width: 600px;
-  height: 1000px;
-  margin-bottom: 10px;
+.img_box4 img,
+.img_box5 img {
+  width: 790px;
+  height: 620px;
+  object-fit: cover;
+  transition: 0.3s;
 }
 
-.img_box2 {
-  position: absolute;
-  top: 4vh;
-  right: 0px;
-}
-.img_box2 a {
-  display: block;
-  overflow: hidden;
-  width: 500px;
-  height: 500px;
-  margin-bottom: 10px;
-}
-
-.img_box3 {
-  position: absolute;
-  top: 77vh;
-  right: 4vw;
-}
-.img_box3 a {
-  display: block;
-  overflow: hidden;
-  width: 700px;
-  height: 300px;
-  margin-bottom: 10px;
-}
-
-.img_box4 {
-  position: absolute;
-  top: 125vh;
-}
-.img_box4_wrap {
-  display: flex;
-  gap: 10px;
-}
-.img_box4 a:first-of-type {
-  display: block;
-  overflow: hidden;
-  width: 800px;
-  height: 450px;
-  margin-bottom: 10px;
-}
-.img_box4_wrap a:last-of-type {
-  display: block;
-  overflow: hidden;
-  width: 320px;
-  height: 450px;
-}
-
-.img_box5 {
-  position: absolute;
-  top: 190vh;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.img_box5 a {
-  display: block;
-  overflow: hidden;
-  width: 800px;
-  height: 600px;
-  margin-bottom: 10px;
-}
-
-.img_box1 img:hover,
-.img_box2 img:hover,
-.img_box3 img:hover,
-.img_box4 img:hover,
-.img_box5 img:hover {
-  transform: scale(1.02);
-}
-
-.sec3 .con a {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.more a {
+/* .more a {
   position: absolute;
   top: 425vh;
   left: 50%;
@@ -328,7 +260,7 @@ section {
 .more_img_wrap .image5 {
   width: 30px;
   height: 100%;
-}
+} */
 
 /* sec4 */
 .sec4 {
