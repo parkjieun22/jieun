@@ -212,8 +212,8 @@ section {
 .img_box1 img,
 .img_box2 img,
 .img_box3 img {
-  width: 520px;
-  height: 400px;
+  width: 100%;
+  height: fit-content;
   object-fit: cover;
   transition: 0.3s;
   border-radius: 10px;
@@ -222,8 +222,8 @@ section {
 
 .img_box4 img,
 .img_box5 img {
-  width: 790px;
-  height: 620px;
+  width: 100%;
+  height: fit-content;
   object-fit: cover;
   transition: 0.3s;
   border-radius: 10px;
