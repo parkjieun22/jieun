@@ -483,7 +483,7 @@
   /* sec3 */
   .sec3 {
     height: fit-content;
-    padding-bottom: 100px;
+    margin-bottom: 60px;
   }
   .sec3 span {
     font-size: 14px;
