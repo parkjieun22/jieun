@@ -171,8 +171,6 @@ section {
 .ad9 {
   display: none;
 }
-.detail_page8 {
-}
 .submenu {
   margin-bottom: 50px;
   font-size: 20px;
@@ -240,6 +238,7 @@ section {
 }
 
 /* 상세페이지 submenu1, 광고 submenu3, 촬영 submenu4 */
+
 .submenu1,
 .submenu3,
 .submenu4,
