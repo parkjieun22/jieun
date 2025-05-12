@@ -408,6 +408,11 @@
     width: 90%;
     font-size: 20px;
   }
+  .sec3_top,
+  .sec3_bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
   /* 푸터 */
   footer p,
