@@ -305,6 +305,7 @@ footer h4 {
   display: flex;
   font-weight: bold;
   color: #fff;
+  justify-content: space-evenly;
 }
 .info_bottom_link {
   gap: 30px;
