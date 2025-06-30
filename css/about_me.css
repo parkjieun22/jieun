@@ -230,7 +230,8 @@ section {
 .skill .detail:nth-of-type(4) .gauge_wrap .gauge:nth-last-child(-n + 2),
 .skill .detail:nth-of-type(5) .gauge_wrap .gauge:nth-last-child(-n + 3),
 .skill .detail:nth-of-type(6) .gauge_wrap .gauge:nth-last-child(-n + 3),
-.skill .detail:nth-of-type(7) .gauge_wrap .gauge:nth-last-child(-n + 7) {
+.skill .detail:nth-of-type(7) .gauge_wrap .gauge:nth-last-child(-n + 7),
+.skill .detail:nth-of-type(8) .gauge_wrap .gauge:nth-last-child(-n + 7) {
   background-color: transparent;
   border: 1px solid var(--main-color);
   box-sizing: border-box;
