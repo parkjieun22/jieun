@@ -241,7 +241,8 @@ section {
 .submenu1,
 .submenu3,
 .submenu4,
-.submenu5 {
+.submenu5,
+.submenu6 {
   width: 100%;
   display: flex;
   gap: 20px;
@@ -264,18 +265,6 @@ section {
 .submenu4 .photo9 {
   display: none;
 }
-/* .submenu1 img,
-.submenu3 img,
-.submenu4 img,
-.submenu5 img {
-  width: 385px;
-  height: 385px;
-  background-color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  object-fit: cover;
-  cursor: pointer;
-} */
 /* ================= 끝 ================= */
 
 /*  배너 submenu2 */

@@ -3,6 +3,14 @@
   .submenu4 .photo9 {
     display: block;
   }
+  .retouch4 {
+    display: none;
+  }
+
+  .submenu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* 노트북 */
@@ -37,7 +45,8 @@
   .submenu1 img,
   .submenu3 img,
   .submenu4 img,
-  .submenu5 img {
+  .submenu5 img,
+  .submenu6 img {
     width: 400px;
     height: 400px;
   }
@@ -83,7 +92,8 @@
   .submenu1 img,
   .submenu3 img,
   .submenu4 img,
-  .submenu5 img {
+  .submenu5 img,
+  .submenu6 img {
     width: 28vw;
     height: 28vw;
   }
@@ -150,7 +160,8 @@
   .submenu1,
   .submenu3,
   .submenu4,
-  .submenu5 {
+  .submenu5,
+  .submenu6 {
     gap: 10px;
   }
   .submenu2 {
@@ -231,17 +242,27 @@
   .ad9 .img_wrap {
     cursor: default;
   }
-
   .submenu {
     font-size: 14px;
     gap: 2px;
     justify-content: center;
     margin-bottom: 20px;
+    padding: 0 12%;
+  }
+  @media (min-width: 586px) {
+    .submenu {
+      font-size: 14px;
+      gap: 2px;
+      justify-content: center;
+      margin-bottom: 20px;
+      padding: 0 20%;
+    }
   }
   .submenu1,
   .submenu3,
   .submenu4,
-  .submenu5 {
+  .submenu5,
+  .submenu6 {
     gap: 10px;
     margin-bottom: 100px;
   }
@@ -367,11 +388,13 @@
     justify-content: center;
     margin-bottom: 30px;
     flex-wrap: wrap;
+    padding: 0 8%;
   }
   .submenu1,
   .submenu3,
   .submenu4,
-  .submenu5 {
+  .submenu5,
+  .submenu6 {
     /* gap: 10px; */
     margin-bottom: 60px;
   }
